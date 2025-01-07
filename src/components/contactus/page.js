@@ -36,12 +36,12 @@ export default function ContactUs() {
   return (
     <section className={`${kodchasan.className} ${kodchasanLight.className} contactus text-white relative min-h-screen flex flex-col items-center justify-center p-20`}>
       <div className="groundBG"></div>
-      <h2 className="text-5xl font-bold">CONTACT US</h2>
+      <h2 className="text-5xl font-bold text-center">CONTACT US</h2>
       <div className="w-72 relative h-20">
         <Image src={'/assests/events/titleUnderline.svg'} fill={true} alt="Decoration" />
       </div>
-      <div className="flex justify-evenly items-center">
-        <ContactUser
+      <div className="flex justify-evenly items-center flex-wrap">
+      <ContactUser
           post={'ISC Head'}
           name={'Jay Goel'}
           phone={'+91 9650353407'}

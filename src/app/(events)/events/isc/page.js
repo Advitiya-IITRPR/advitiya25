@@ -37,24 +37,24 @@ export default function Page() {
   const [s, setS] = useState(null);
   return (
     <div className={`${kodchasan.className} ${kodchasanLight.className} relative`}>
-      <section className="min-h-screen flex flex-col items-center justify-center font-kodchasan relative p-20">
+      <section className="min-h-screen flex flex-col items-center justify-center font-kodchasan relative p-8 md:p-20">
         <div className="cloudBG"></div>
         <span className="text-xl text-green-500">ABOUT US</span>
-        <h2 className="text-5xl font-bold">ADVITIYA &apos;24</h2>
+        <h2 className="text-4xl md:text-5xl font-bold">ADVITIYA &apos;24</h2>
         <div className="w-72 relative h-20">
           <Image src={'/assests/events/titleUnderline.svg'} fill={true} alt="Decoration" />
         </div>
-        <p className="text-xl text-center leading-10 font-normal">
+        <p className="text-lg md:text-xl text-center leading-10 font-normal">
         Welcome to Zeitgeist, the most anticipated and biggest techno-cultural fest in North India that showcases myriad events, workshops and talk series and is ornamented by the presence of various big names from different industries such as - Diljit Dosanjh, Anubhav Singh Bassi, The Local Train, Vishal-Shekhar, Zakir Khan, Sonam Bajwa etc.
         </p>
       </section>
 
-      <section className="min-h-screen flex flex-col items-center justify-center font-kodchasan relative p-20">
-        <h2 className="text-5xl font-bold">CONDUCTION</h2>
+      <section className="min-h-screen flex flex-col items-center justify-center font-kodchasan relative p-8 md:p-20">
+        <h2 className="text-4xl md:text-5xl font-bold">CONDUCTION</h2>
         <div className="w-72 relative h-20">
           <Image src={'/assests/events/titleUnderline.svg'} fill={true} alt="Decoration" />
         </div>
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           <div className="flex-[2]">
             <h3 className="text-3xl leading-10 font-bold">PHASE-1</h3>
             <h4 className="text-xl leading-10 font-normal text-green-500 mt-4">REGISTRATION THROUGH SCHOOL</h4>
@@ -68,12 +68,12 @@ export default function Page() {
         </div>
       </section>
         
-      <div className="flex relative h-10 w-3/4 justify-start items-start">
+      <div className="flex relative h-10 w-full justify-start items-start">
         <Image src={'/assests/events/sectionborder.png'} fill={true} alt="Decoration" />
       </div>
 
-      <section className="min-h-screen flex flex-col items-center justify-center font-kodchasan relative p-20 overflow-visible">
-        <div className="flex mb-96">
+      <section className="min-h-screen flex flex-col items-center justify-center font-kodchasan relative p-8 md:p-20 overflow-visible">
+        <div className="flex flex-col md:flex-row mb-28 md:mb-96">
           <div className="flex-[2]"></div>
           <div className="flex-[3]">
             <h3 className="text-3xl leading-10 font-bold mb-4">PHASE-2</h3>
@@ -85,11 +85,11 @@ export default function Page() {
         <div className="moonBG"></div>
       </section>
 
-      <section className="min-h-screen flex flex-col items-center justify-center font-kodchasan relative p-20 overflow-visible">
-        <div className="flex w-full h-full items-center">
-          <div className="flex-[2] flex flex-col justify-between h-full">
+      <section className="min-h-screen flex flex-col items-center justify-center font-kodchasan relative p-8 md:p-20 overflow-visible">
+        <div className="flex flex-col lg:flex-row w-full h-full md:items-center">
+          <div className="flex-[2] flex flex-col justify-between h-full self-start lg:self-auto">
             <h3 className="text-4xl leading-10 font-bold mb-4">REGISTRATION</h3>
-            <div className="flex items-center justify-start gap-12">
+            <div className="flex items-center justify-start gap-12 mb-9 md:mb-0">
               <button 
                 className="rounded-l-full bg-gradient-to-r from-green-500 to-green-700 p-4 pr-2 cursor-pointer hover:bg-green-700"
                 onClick={(e) => s.slidePrev()}>
@@ -138,16 +138,16 @@ export default function Page() {
         <div className="regBG"></div>
       </section>
 
-      <section className="h-[170vh] flex flex-col items-center justify-center font-kodchasan relative p-20 overflow-visible">
-        <div className="px-12 py-6 relative w-[425px] h-[125px] flex text-center items-center">
+      <section className="min-h-[170vh] flex flex-col items-center justify-center font-kodchasan relative p-8 md:p-20 overflow-visible">
+        <div className="px-12 py-6 relative w-[320px] h-[90px] md:w-[425px] md:h-[125px] flex text-center items-center justify-center">
           <div className="plankBG"></div>
-          <h2 className="text-5xl">OUR PRIZES</h2>
+          <h2 className="text-3xl md:text-5xl">OUR PRIZES</h2>
         </div>
-        <div className="flex mt-12 w-full justify-evenly">
-          <div className="bg-green-400 relative w-96 rounded-[2.5rem] border-white shadow-md p-4">
-            <div className="absolute w-[120%] h-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-t from-green-700 to-green-400 -z-[1] rounded-[3rem]"></div>
-            <div className="bg-[var(--background)] rounded-[1.5rem] h-full p-2">
-              <div className="rounded-[1rem] border border-white h-full p-4">
+        <div className="flex flex-col lg:flex-row mt-12 w-full justify-evenly items-center gap-y-10">
+          <div className="bg-green-400 relative w-72 md:w-96 rounded-[2.5rem] border-white shadow-md p-2 md:p-4">
+            <div className="absolute w-[110%] md:w-[120%] h-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-t from-green-700 to-green-400 -z-[1] rounded-[3rem]"></div>
+            <div className="bg-[var(--background)] rounded-[2rem] md:rounded-[1.5rem] h-full p-2">
+              <div className="rounded-[1.7rem] md:rounded-[1rem] border border-white h-full p-4">
                 <h3 className="text-xl leading-10 font-bold text-green-500 mt-4 text-center">OPEN OLYMPIAD</h3>
                 <ul className="regBullets">
                   <li>Prizes worth INR 25,000 distributed amongst the winners of both categories.</li>
@@ -157,10 +157,10 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="bg-green-400 relative w-96 rounded-[2.5rem] border-white shadow-md p-4">
-            <div className="absolute w-[120%] h-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-t from-green-700 to-green-400 -z-[1] rounded-[3rem]"></div>
-            <div className="bg-[var(--background)] rounded-[1.5rem] h-full p-2">
-              <div className="rounded-[1rem] border border-white h-full p-4">
+          <div className="bg-green-400 relative  w-72 md:w-96 rounded-[2.5rem] border-white shadow-md p-2 md:p-4">
+            <div className="absolute w-[110%] md:w-[120%] h-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-t from-green-700 to-green-400 -z-[1] rounded-[3rem]"></div>
+            <div className="bg-[var(--background)] rounded-[2rem] md:rounded-[1.5rem] h-full p-2">
+              <div className="rounded-[1.7rem] md:rounded-[1rem] border border-white h-full p-4">
                 <h3 className="text-xl leading-10 font-bold text-green-500 mt-4 text-center">JUNIOR SCIENTIST OLYMPIAD</h3>
                 <ul className="regBullets">
                   <li>The junior scientist competition holds prizes worth INR 25000.</li>
@@ -173,12 +173,12 @@ export default function Page() {
         <div className="caveBG"></div>
       </section>
 
-      <section className="h-[170vh] flex flex-col items-center font-kodchasan relative p-20">
-        <h2 className="text-5xl font-bold">FREQUENTLY ASKED QUESTIONS</h2>
+      <section className="h-[170vh] flex flex-col items-center font-kodchasan relative p-8 md:p-20">
+        <h2 className="text-4xl md:text-5xl font-bold text-center">FREQUENTLY ASKED QUESTIONS</h2>
         <div className="w-72 relative h-20">
           <Image src={'/assests/events/titleUnderline.svg'} fill={true} alt="Decoration" />
         </div>
-        <div className="flex w-full">
+        <div className="flex flex-col md:flex-row w-full">
           <div className="flex-[2]">
             <FAQ 
               title={'When will we receive our admit card for Phase 2?'} 
