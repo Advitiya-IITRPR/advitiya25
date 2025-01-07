@@ -1,6 +1,7 @@
 import { User, Mail, Phone, X } from "lucide-react";
 import { FaFacebookF } from "react-icons/fa";
 import { TbBrandInstagramFilled, TbBrandTiktokFilled, TbBrandYoutubeFilled } from "react-icons/tb";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -23,12 +24,27 @@ export default function Footer() {
           </section>
 
           <section className="max-w-6xl h-16 flex gap-6 mt-12">
-            <button className="h-16 w-16 p-5 text-xl rounded-[50%] bg-gradient-to-r from-[#43F27F] to-[#0A772F] text-center"><FaFacebookF color="white" fill="white" /></button>
-            <button className="h-16 w-16 p-5 text-2xl  rounded-[50%] bg-gradient-to-r from-[#43F27F] to-[#0A772F] text-center"><TbBrandInstagramFilled className="text-2xl" color="white" fill="white" /></button>
-            <button className="h-16 w-16 p-5 text-xl rounded-[50%] bg-gradient-to-r from-[#43F27F] to-[#0A772F] text-center"><X color="white" fill="white" /></button>
-            <button className="h-16 w-16 p-5 rounded-[50%] bg-gradient-to-r from-[#43F27F] to-[#0A772F] text-center"><TbBrandYoutubeFilled className="text-2xl" color="white" fill="white" /></button>
-            <button className="h-16 w-16 p-5 rounded-[50%] bg-gradient-to-r from-[#43F27F] to-[#0A772F] text-center"><TbBrandTiktokFilled className="text-2xl" color="white" fill="white" /></button>
-          </section>
+      <a href="https://www.facebook.com/advitiya.iitrpr/" target="_blank" rel="noopener noreferrer">
+        <button className="h-16 w-16 p-5 text-xl rounded-[50%] bg-gradient-to-r from-[#43F27F] to-[#0A772F] text-center">
+          <FaFacebookF color="white" fill="white" />
+        </button>
+      </a>
+      <a href="https://www.instagram.com/advitiya_iitrpr?igsh=MWlhenRwdmY4dHZtZQ==" target="_blank" rel="noopener noreferrer">
+        <button className="h-16 w-16 p-5 text-2xl rounded-[50%] bg-gradient-to-r from-[#43F27F] to-[#0A772F] text-center">
+          <TbBrandInstagramFilled className="text-2xl" color="white" fill="white" />
+        </button>
+      </a>
+      <a href="https://www.youtube.com/@advitiyaiitropar9771" target="_blank" rel="noopener noreferrer">
+        <button className="h-16 w-16 p-5 rounded-[50%] bg-gradient-to-r from-[#43F27F] to-[#0A772F] text-center">
+          <TbBrandYoutubeFilled className="text-2xl" color="white" fill="white" />
+        </button>
+      </a>
+      <a href="https://www.linkedin.com/company/advitiya-iit-ropar" target="_blank" rel="noopener noreferrer">
+      <button className="h-16 w-16 p-5 text-xl rounded-[50%] bg-gradient-to-r from-[#43F27F] to-[#0A772F] text-center">
+        <FaLinkedin color="white" fill="white" />
+      </button>
+    </a>
+        </section>
 
         </div>
       </div>

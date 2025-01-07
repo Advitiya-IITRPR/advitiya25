@@ -11,7 +11,16 @@ import fullThrottle from "../../../../public/assests/events/full-throttle.png";
 import bikeShow from "../../../../public/assests/events/bike-show.png";
 import innovateX from "../../../../public/assests/events/innovatex.png";
 import robowar from "../../../../public/assests/events/robowar.png";
+import { Kodchasan } from "next/font/google";
+const kodchasan = Kodchasan({
+  subsets: ["latin"],
+  weight: '700'
+});
 
+const kodchasanLight = Kodchasan({ 
+  subsets: ["latin"],
+  weight: '400'
+});
 export default function Page() {
 
   const cards = [
@@ -59,12 +68,12 @@ export default function Page() {
   return (
     <div>
       <section
-        className="bg-cover bg-center h-[120vh] w-full bg-no-repeat"
+        className={`${kodchasan.className} bg-cover bg-center h-[120vh] w-full bg-no-repeat`}
         style={{ backgroundImage: "url('/assests/images/Homepage.png')" }}
       >
         <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[5%] lg:pt-[8%] md:pt-[7%]">
           <div className="flex flex-col mt-[9%] w-[50%] ">
-            <div className=" leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[40px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px]    font-normal font-[Impact] leading-[231.75px]">
+            <div className=" leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[40px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px]  font-normal font-[Impact] leading-[231.75px]">
               ADVITIYA'25
             </div>
             <div className="text-white bg-gradient-to-r from-green-500 to-green-500/0 text-xl w-[290px] xl:[200px] py-[2%] m rounded-full text-center">
@@ -84,7 +93,7 @@ export default function Page() {
       </section>
       {/* <div className="h-[10px]  bg-gradient-to-b from-[#1e2614] to-[#10151b]" ></div> */}
       <section
-        className="bg-[#121720] px-[13%] py-[10%]"
+        className={` ${kodchasan.className} bg-[#121720] px-[13%] py-[10%]`}
         style={{ backgroundImage: "url('/assests/images/aboutUsbg.png')" }}
       >
         <div className="flex flex-col justify-center items-center py-5">
@@ -96,13 +105,13 @@ export default function Page() {
           </span>
           <Image src={arrow} alt="..." />
         </div>
-        <div className="font-roboto text-xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-white font-medium leading-loose text-center">
+        <div className={ `${kodchasanLight.className} text-xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-white font-medium leading-loose text-center`}>
         Advitiya 2025, IIT Ropar's annual tech fest, themed "The Crucible of Tomorrow," is set to be a landmark event showcasing the best of technological innovation and intellectual prowess. The fest will feature a wide range of competitions, including coding marathons, AI challenges, and cybersecurity battles; robotics showcases and aerospace contests; creative design and mathematical problem-solving events; as well as gaming and financial strategy tournaments. Complementing these high-energy contests are captivating talks and panel discussions by renowned technologists, industry leaders, and entrepreneurs, offering fresh insights into cutting-edge advancements and the future of technology. Advitiya 2025 is a stage where talent, ideas, and collaboration converge to shape a brighter tomorrow.
         </div>
       </section>
 
       <section
-        className="bg-[#121720] px-[13%] py-[5%]"
+        className={`${kodchasanLight.className} bg-[#121720] px-[13%] py-[5%]`}
         // style={{ backgroundImage: "url('/assests/images/aboutUsbg.png')" }}
       >
         <div className="flex flex-col justify-center items-center py-1 pb-10">
@@ -120,16 +129,18 @@ export default function Page() {
           <span className="py-7 text-[#3BE174] font-semibold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-base">
             THEME
           </span>
-          <div className=" px-5 font-roboto text-xl 2xl:text-2xl xl:text-lg lg:text-base md:text-sm sm:text-sm text-white font-medium leading-loose text-center">
+          <div className=" px-5 text-xl 2xl:text-2xl xl:text-lg lg:text-base md:text-sm sm:text-sm text-white font-medium leading-loose text-center">
           This year, Advitiya unveils The Crucible of Tomorrow, an extraordinary narrative of innovation and ambition where the brightest minds converge to redefine the future. In a spectacular reveal, four legendary factions emerge—Voltaris, masters of code and machine; Aeris, pioneers of engineering and flight; Terranova, architects of design and innovation; and Infernix, strategists of gaming and finance. Each faction represents a cornerstone of human ingenuity, championing disciplines that shape the world. As these forces clash in an epic contest, their collaboration and rivalry will determine the next chapter of technological evolution. This is not just a competition—this is the crucible where brilliance is forged, and the future is created.
           </div>
         </div>
       </section>
 
-      <section className="bg-[#121720]">
-        <Image src={sec3bg} className="pt-10" alt="Decoration" />
+      <section className={`  ${kodchasan.className} bg-[#121720]`}>
+      <div className="flex justify-center py-5">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Fwn-ZAxCq4g?si=6bMT_FfLTWpbRmFC" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
       </section>
-      <section className="h-[100vh] bg-[#091418]">
+      <section className={`  ${kodchasanLight.className} h-[100vh] bg-[#091418]`}>
         <div className="flex justify-center items-center h-[100vh]">
           <div className="flex flex-col w-[30%]">
             <span className="text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
@@ -177,7 +188,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-[#030d14] px-[13%]  pb-[10%]">
+      <section className={`${kodchasanLight.className} bg-[#030d14] px-[13%]  pb-[10%]`}>
         <div className="flex flex-col justify-center items-center py-10">
           <span className="text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
             Our Highlights
@@ -187,7 +198,7 @@ export default function Page() {
           </span>
           <Image src={arrow} alt="..." />
         </div>
-        <div className="font-roboto text-xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-white font-medium leading-loose text-center">
+        <div className={`  ${kodchasanLight.className} text-xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-white font-medium leading-loose text-center`}>
         Advitiya 2024, IIT Ropar's flagship technical fest, showcased an impressive lineup of events and activities that attracted thousands of participants. Highlights included thrilling competitions like Drone Racing, RC Car Racing, and Hackathons, alongside intellectually stimulating challenges such as Coding Competitions, Fin-Tech Challenges, and the Maths Arena. Workshops on cutting-edge technologies like Artificial Intelligence, Machine Learning, and Rocket Building provided hands-on learning opportunities. Esteemed professionals shared their insights during panel discussions, while the Inter-School Conclave fostered creativity among young minds with quizzes, exhibitions, and robotic showcases. The festival was inaugurated by Director Prof. Rajiv Ahuja and graced by Mr. Soarabh Pathak, VP of Maruti Suzuki, emphasizing its scale and significance.
         </div>
       </section>
