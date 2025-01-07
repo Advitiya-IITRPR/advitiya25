@@ -11,15 +11,15 @@ export default function Footer() {
       >
         <div className="flex flex-col items-center justify-center h-full w-full gap-4 font-serif">
           <section className="w-full h-2/5"></section>
-          <section className="text-white text-8xl font-bold font-sans">TECHFEST</section>
-          <section className="text-white max-w-3xl text-center text-xl font-sans mt-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</section>
+          <section className="text-white text-4xl font-bold font-sans">Contact The Organizing Committee</section>
+          <section className="text-white max-w-3xl text-center text-xl font-sans mt-8">In case of any doubts, feel free to contact the undersigned</section>
           <div className="w-2/5 h-[1px] bg-gradient-to-r from-[#40EC7B00] via-[#FFFFFF] to-[#40EC7B00]"></div>
 
-          <section className="text-white h-16 justify-center items-center text-sm flex font-normal"><User strokeWidth={1.75} color="white" className="text-sm" /> <pre>  kenzinlawson  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} /> <pre>  kenzi.lawson@example.com  </pre>
-            <pre className="text-white/50 text-sm">|  </pre> <Phone color="white" strokeWidth={1.75} /> <pre>  kenzi.lawson@example.com  </pre>
+          <section className="text-white h-16 justify-center items-center text-sm flex font-normal"><User strokeWidth={1.75} color="white" className="text-sm" /> <pre>  Krish Soliya  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} /> <pre>  2022eeb1183@iitrpr.ac.in  </pre>
+            <pre className="text-white/50 text-sm">|  </pre> <Phone color="white" strokeWidth={1.75} /> <pre>  ‪+91 95121 19212‬  </pre>
           </section>
-          <section className="text-white justify-center items-center text-sm flex font-normal"><User strokeWidth={1.75} color="white" className="text-sm" /> <pre>  kenzinlawson  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} /> <pre>  kenzi.lawson@example.com  </pre>
-            <pre className="text-white/50 text-sm">|  </pre> <Phone color="white" strokeWidth={1.75} /> <pre>  kenzi.lawson@example.com  </pre>
+          <section className="text-white justify-center items-center text-sm flex font-normal"><User strokeWidth={1.75} color="white" className="text-sm" /> <pre>  Mihir Kasare  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} /> <pre>  2022chb1052@iitrpr.ac.in   </pre>
+            <pre className="text-white/50 text-sm">|  </pre> <Phone color="white" strokeWidth={1.75} /> <pre>  ‪+91 91367 24826‬  </pre>
           </section>
 
           <section className="max-w-6xl h-16 flex gap-6 mt-12">

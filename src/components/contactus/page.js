@@ -42,17 +42,17 @@ export default function ContactUs() {
       </div>
       <div className="flex justify-evenly items-center">
         <ContactUser
-          post={'TSP Head'}
+          post={'ISC Head'}
           name={'Chena Ram Kumawat'}
           phone={'9876543210'}
           email={'advitiya@iitrpr.ac.in'} />
         <ContactUser
-          post={'TSP Head'}
+          post={'ISC Head'}
           name={'Chena Ram Kumawat'}
           phone={'9876543210'}
           email={'advitiya@iitrpr.ac.in'} />
         <ContactUser
-          post={'TSP Head'}
+          post={'ISC Head'}
           name={'Chena Ram Kumawat'}
           phone={'9876543210'}
           email={'advitiya@iitrpr.ac.in'} />

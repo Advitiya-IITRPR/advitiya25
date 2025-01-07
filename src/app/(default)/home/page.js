@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import mascot from "../../../../public/assests/images/mascot1.png";
@@ -6,33 +7,37 @@ import Slider from "../../../components/menu/page.js";
 import arrow from "../../../../public/assests/images/aboutusLogo.png";
 import Lvideo from "../../../../public/assests/images/Lvideo.png";
 import sec3bg from "../../../../public/assests/images/sec3bg.png";
+import fullThrottle from "../../../../public/assests/events/full-throttle.png";
+import bikeShow from "../../../../public/assests/events/bike-show.png";
+import innovateX from "../../../../public/assests/events/innovatex.png";
+import robowar from "../../../../public/assests/events/robowar.png";
 
 export default function Page() {
 
   const cards = [
     {
       id: 1,
-      title: "AERIS",
-      content: "gUARDIANS OF ENGINEERING AND FLIGHT",
-      image: { mascot },
+      title: "Full Throttle",
+      content: "The ultimate racing competition",
+      image: fullThrottle,
     },
     {
       id: 2,
-      title: "TERRANOVA",
-      content: "ARCHITECTS OF DESIGN AND INNOVATION",
-      image: { mascot },
+      title: "Bike Show",
+      content: "Showcase your bike and win exciting prizes",
+      image: bikeShow,
     },
     {
       id: 3,
-      title: "VOLTARIS",
-      content: "MASTERS OF CODE AND MACHINE",
-      image: { mascot },
+      title: "InnovateX",
+      content: "Showcase your innovation and win exciting prizes",
+      image: innovateX,
     },
     {
       id: 4,
-      title: "INFERNIX",
-      content: "STRATEGISTS OF GAMING AND FINANCE",
-      image: { mascot },
+      title: "Robowar",
+      content: "The ultimate battle of robots",
+      image: robowar,
     },
   ];
 
@@ -59,11 +64,11 @@ export default function Page() {
       >
         <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[5%] lg:pt-[8%] md:pt-[7%]">
           <div className="flex flex-col mt-[9%] w-[50%] ">
-            <div className="text-white bg-gradient-to-r from-green-500 to-green-500/0 text-xl w-[290px] xl:[200px] py-[2%] m rounded-full text-center">
-              TECHFEST IIT ROPAR
-            </div>
             <div className=" leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[40px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px]    font-normal font-[Impact] leading-[231.75px]">
-              ADVITIYA,24
+              ADVITIYA'25
+            </div>
+            <div className="text-white bg-gradient-to-r from-green-500 to-green-500/0 text-xl w-[290px] xl:[200px] py-[2%] m rounded-full text-center">
+              TECHFEST, IIT ROPAR
             </div>
           </div>
           <div className="2xl:w-[460px] xl:w-[400px] lg:w-[350px] md:w-[300px] sg:w-[250px] mr-[12%]">
@@ -83,20 +88,16 @@ export default function Page() {
         style={{ backgroundImage: "url('/assests/images/aboutUsbg.png')" }}
       >
         <div className="flex flex-col justify-center items-center py-5">
+          <span className="text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
+            ADVITIYA'25
+          </span>
           <span className="text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
             ABOUT US
-          </span>
-          <span className="text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
-            ADVITIYA,24
           </span>
           <Image src={arrow} alt="..." />
         </div>
         <div className="font-roboto text-xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-white font-medium leading-loose text-center">
-          Welcome to Zeitgeist, the most anticipated and biggest techno-cultural
-          fest in North India that showcases myriad events, workshops and talk
-          series and is ornamented by the presence of various big names from
-          different industries such as- Diljit Dosanjh, Anubhav Singh Bassi, the
-          local Trian band, Vishal-Shekhar, Zakir Khan, Sonam Bajwa etc.
+        Advitiya 2025, IIT Ropar's annual tech fest, themed "The Crucible of Tomorrow," is set to be a landmark event showcasing the best of technological innovation and intellectual prowess. The fest will feature a wide range of competitions, including coding marathons, AI challenges, and cybersecurity battles; robotics showcases and aerospace contests; creative design and mathematical problem-solving events; as well as gaming and financial strategy tournaments. Complementing these high-energy contests are captivating talks and panel discussions by renowned technologists, industry leaders, and entrepreneurs, offering fresh insights into cutting-edge advancements and the future of technology. Advitiya 2025 is a stage where talent, ideas, and collaboration converge to shape a brighter tomorrow.
         </div>
       </section>
 
@@ -105,11 +106,8 @@ export default function Page() {
         // style={{ backgroundImage: "url('/assests/images/aboutUsbg.png')" }}
       >
         <div className="flex flex-col justify-center items-center py-1 pb-10">
-          <span className="text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
-            OUR VIDEO
-          </span>
           <span className="text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
-            LATEST VIDEO
+            FEST TRAILER
           </span>
           <Image src={arrow} alt="..." />
         </div>
@@ -123,13 +121,7 @@ export default function Page() {
             THEME
           </span>
           <div className=" px-5 font-roboto text-xl 2xl:text-2xl xl:text-lg lg:text-base md:text-sm sm:text-sm text-white font-medium leading-loose text-center">
-            Teleport to the 27th Edition of Techfest and celebrate the interplay
-            between Magic, Science & Technology. Step into the realm of wonders
-            where the frontiers of imagination are translated into real-world
-            possibilities. From ancient mysticism to cutting-edge innovations,
-            explore the endless spectrum of creativity and ingenuity. Get ready
-            for a Techno-Mystical extravaganza and embark on a miraculous
-            journey of discovery into the unknown!
+          This year, Advitiya unveils The Crucible of Tomorrow, an extraordinary narrative of innovation and ambition where the brightest minds converge to redefine the future. In a spectacular reveal, four legendary factions emerge—Voltaris, masters of code and machine; Aeris, pioneers of engineering and flight; Terranova, architects of design and innovation; and Infernix, strategists of gaming and finance. Each faction represents a cornerstone of human ingenuity, championing disciplines that shape the world. As these forces clash in an epic contest, their collaboration and rivalry will determine the next chapter of technological evolution. This is not just a competition—this is the crucible where brilliance is forged, and the future is created.
           </div>
         </div>
       </section>
@@ -141,10 +133,10 @@ export default function Page() {
         <div className="flex justify-center items-center h-[100vh]">
           <div className="flex flex-col w-[30%]">
             <span className="text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
-              our Competitions
+              ADVITYA'25
             </span>
             <span className="pb-8  text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
-              Competitions
+            FLAGSHIP EVENTS
             </span>
             <div className="flex">
               <div
@@ -168,7 +160,7 @@ export default function Page() {
                   >
                     {/* #36362f */}
                     <div className="bg-gradient-radial from-[3131b23] to-[#36362f]">
-                      <Image src={mascot} className="w-[240px]" alt="Decoration" />
+                      <Image src={card.image} width = {240} height = {240} className="w-[240px]" alt="Decoration" />
                     </div>
                     <h3 className="text-3xl font-semibold text-white  ">
                       {card.title}
@@ -177,7 +169,8 @@ export default function Page() {
                     <p className="text-xl text-white text-center my-3 w-full">
                       {card.content}
                     </p>
-                    <div className="bg-[#40EC7B] h-2 w-[70%] rounded-t-xl"></div>
+                    <div className="bg-[#40EC7B] h-2 w-[70%] rounded">
+                    </div>
                   </div>
                 ))}
             </div>
@@ -195,11 +188,7 @@ export default function Page() {
           <Image src={arrow} alt="..." />
         </div>
         <div className="font-roboto text-xl 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl text-white font-medium leading-loose text-center">
-          Welcome to Zeitgeist, the most anticipated and biggest techno-cultural
-          fest in North India that showcases myriad events, workshops and talk
-          series and is ornamented by the presence of various big names from
-          different industries such as- Diljit Dosanjh, Anubhav Singh Bassi, the
-          local Trian band, Vishal-Shekhar, Zakir Khan, Sonam Bajwa etc.
+        Advitiya 2024, IIT Ropar's flagship technical fest, showcased an impressive lineup of events and activities that attracted thousands of participants. Highlights included thrilling competitions like Drone Racing, RC Car Racing, and Hackathons, alongside intellectually stimulating challenges such as Coding Competitions, Fin-Tech Challenges, and the Maths Arena. Workshops on cutting-edge technologies like Artificial Intelligence, Machine Learning, and Rocket Building provided hands-on learning opportunities. Esteemed professionals shared their insights during panel discussions, while the Inter-School Conclave fostered creativity among young minds with quizzes, exhibitions, and robotic showcases. The festival was inaugurated by Director Prof. Rajiv Ahuja and graced by Mr. Soarabh Pathak, VP of Maruti Suzuki, emphasizing its scale and significance.
         </div>
       </section>
     </div>

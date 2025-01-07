@@ -21,17 +21,6 @@ const App = () => {
   }, []);
 
 
-
-
-
-
-
-
-
-
-
-
-
   return (
     <div className="relative">
       <div style={{ transform: `translateY(${scrollY * 0.5}px` }} className="h-[85vh] relative  w-full bg-[#10171D]">
@@ -45,9 +34,9 @@ const App = () => {
               className="text-white  text-[1.5rem] max-w-[15rem] font-sans tracking-wider -mt-16 mb-8 bg-gradient-to-r from-green-500 to-transparent text-center rounded-full"
               style={{ padding: "10px 15px" }}
             >
-              HOME • SIGN IN
+              SIGN IN
             </div>
-            <div className="text-white text-8xl font-bold font-sans">SIGN IN</div>
+           {/* <div className="text-white text-8xl font-bold font-sans">SIGN IN</div> */}
           </div>
         </div>
       </div>
@@ -63,14 +52,14 @@ const App = () => {
           <div className="flex h-full w-full">
 
             <div className="h-full w-1/2 flex flex-col items-center justify-center font-sans gap-4">
-              <section className="w-3/4 pl-1 mx-auto flex justify-start text-lg text-[#3BE174]">
-                HACKATHONS
-              </section>
+            {/*  <section className="w-3/4 pl-1 mx-auto flex justify-start text-lg text-[#3BE174]">
+                FILL THE GOOGLE FORM FOR MORE INFO
+              </section>*/}
               <section className="w-3/4 mx-auto flex justify-start text-6xl text-white font-bold">
                 HACKATHONS
               </section>
               <section className="w-3/4 mx-auto flex justify-start text-lg text-white">
-                Teleport to the 27th Edition of Techfest and celebrate the interplay between Magic, Science & Technology. Step into the realm of wonders where the frontiers of imagination are translated into real-world possibilities.
+                Fill the form for more info 
               </section>
               <section className="w-3/4 mx-auto flex justify-start">
                 <button
@@ -108,14 +97,14 @@ const App = () => {
             </div>
             {/* Right Section */}
             <div className="h-full w-1/2 flex flex-col items-center justify-center font-sans gap-4">
-              <section className="w-3/4 pr-1 mx-auto flex justify-end text-lg text-[#3BE174]">
+             {/* <section className="w-3/4 pr-1 mx-auto flex justify-end text-lg text-[#3BE174]">
                 ACCOMODATION
-              </section>
+              </section> */}
               <section className="w-3/4 mx-auto flex justify-end text-6xl text-white font-bold">
-                ACCOMODATION
+              ACCOMODATION
               </section>
-              <section className="w-3/4 mx-auto flex justify-start text-lg text-white">
-                Teleport to the 27th Edition of Techfest and celebrate the interplay between Magic, Science & Technology. Step into the realm of wonders where the frontiers of imagination are translated into real-world possibilities.
+              <section className="w-3/4 mx-auto px-12 flex justify-start text-lg text-white">
+              Fill the form to book accomadations
               </section>
               <section className="w-3/4 mx-auto flex justify-end">
                 <button
