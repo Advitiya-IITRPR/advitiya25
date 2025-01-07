@@ -176,13 +176,18 @@ export default function Page() {
             </span>
             <div className="flex">
               <div
-                className="text-white bg-green-500 h-20 w-10 rounded-l-full"
+                className="text-white bg-green-500 p-5 pb-6 pr-2 font-bold text-center rounded-l-full"
                 onClick={goPrev}
-              ></div>
+              >
+                 &lt;
+              </div>
               <div
-                className="text-white bg-green-500 h-20 w-10 rounded-r-full ml-20 "
+                className="text-white bg-green-500  p-5 pl-2 font-bold text-center rounded-r-full ml-20 "
                 onClick={goNext}
-              ></div>
+              >
+                {" "}
+                &gt;
+              </div>
             </div>
           </div>
           <div></div>
