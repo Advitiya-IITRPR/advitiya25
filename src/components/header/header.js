@@ -34,11 +34,13 @@ export default function Page() {
         {/* Logo */}
         <div className="md:w-[17%] w-[45%] sm:w-[40%]">
           <div className="aspect-[895/127]">
+            <Link href="/">
             <Image
               src={logo}
               alt="Logo"
               className="object-contain w-full h-full"
             />
+            </Link>
           </div>
         </div>
 
@@ -71,7 +73,7 @@ export default function Page() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 70 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="fixed inset-0 inset-y-[2.8rem] h-[calc(100vh-2.8rem)] md:inset-y-[4.3rem] md:h-[calc(100vh-4.3rem)] md:w-2/5 w-screen bg-cover bg-[-15rem] bg-no-repeat flex flex-col justify-center items-center gap-6 z-50"
+                className="fixed inset-0 inset-y-[2.8rem] h-[calc(100vh-2.8rem)] md:inset-y-[4.3rem] md:h-[calc(100vh-4.3rem)] md:w-[35%] w-screen bg-cover bg-[35%] bg-no-repeat flex flex-col justify-center items-center gap-6 z-50"
                 style={{ backgroundImage: "url('/header/image.png')" }}
               >
                 {/* <img
