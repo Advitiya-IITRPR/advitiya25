@@ -186,7 +186,7 @@ export default function Page() {
             </div>
           </div>
           <div></div>
-          <div className="w-auto max-w-4xl mx-auto p-4">
+          <div className="md:w-auto w-[90vw] max-w-4xl mx-auto p-4">
             {/* Swiper Component */}
             <Swiper
               ref={swiperRef} // Attach ref to Swiper
