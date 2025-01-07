@@ -74,7 +74,7 @@ export default function Page() {
               TECHFEST IIT ROPAR
             </div>
             <div className="leading-[60px] sm:leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[45px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px]    font-normal font-[Impact] leading-[231.75px]">
-              ADVITIYA,25
+              ADVITIYA'25
             </div>
           </div>
           <div className="2xl:w-[460px] xl:w-[400px] lg:w-[350px] md:w-[300px] sm:w-[250px] w-[150px] sm:mr-[12%] lg:mr-[1%] xl:mr-[12%] -mr-[3%]  ">
