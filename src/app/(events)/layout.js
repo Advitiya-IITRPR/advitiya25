@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
 
-        {/* <Footer /> */}
+        <Footer />
         {/* Once the footer has been made responsive, uncomment this */}
       </body>
     </html>
