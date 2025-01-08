@@ -41,21 +41,26 @@ export default function ContactUs() {
         <Image src={'/assests/events/titleUnderline.svg'} fill={true} alt="Decoration" />
       </div>
       <div className="flex justify-evenly items-center flex-wrap">
+      <ContactUser
+          post={'ISC Head'}
+          name={'Jay Goel'}
+          phone={'+91 9650353407'}
+          email={'2022eeb1178@iitrpr.ac.in'} />
         <ContactUser
-          post={'TSP Head'}
-          name={'Chena Ram Kumawat'}
-          phone={'9876543210'}
-          email={'advitiya@iitrpr.ac.in'} />
+          post={'ISC Head'}
+          name={'Garvit Bhalla'}
+          phone={'+91 9463495860'}
+          email={'2022eeb1310@iitrpr.ac.in'} />
         <ContactUser
-          post={'TSP Head'}
-          name={'Chena Ram Kumawat'}
-          phone={'9876543210'}
-          email={'advitiya@iitrpr.ac.in'} />
-        <ContactUser
-          post={'TSP Head'}
-          name={'Chena Ram Kumawat'}
-          phone={'9876543210'}
-          email={'advitiya@iitrpr.ac.in'} />
+          post={'ISC Head'}
+          name={'A.B. Vrushank'}
+          phone={'+91 7822855909'}
+          email={'2022csb1002@iitrpr.ac.in'} />
+          <ContactUser
+          post={'ISC Head'}
+          name={'Tanmay Goyal'}
+          phone={'+91 8146294608'}
+          email={'2022eeb1219@iitrpr.ac.in'} />
       </div>
     </section>
   );
