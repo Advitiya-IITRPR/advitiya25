@@ -7,25 +7,8 @@ import sec3bg from "../../../../public/assests/images/sec3bg.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Kodchasan } from "next/font/google";
 
-const kodchasan = Kodchasan({
-subsets: ["latin"],
-weight: '700'
-});
-
-const kodchasanLight = Kodchasan({ 
-  subsets: ["latin"],
-  weight: '400'
-});
 export default function Page() {
-
-
-// const kodchasanLight = Kodchasan({ 
-//   subsets: ["latin"],
-//   weight: '400'
-// });
-
   const cards = [
     {
       id: 1,
@@ -82,16 +65,16 @@ export default function Page() {
   return (
     <div>
       <section
-        className="bg-cover bg-center h-[50vh] sm:h-[120vh] w-full font-kodchasan bg-no-repeat"
+        className="bg-cover bg-center h-[50vh] sm:h-[120vh] w-full bg-no-repeat"
         style={{ backgroundImage: "url('/assests/images/Homepage.png')" }}
       >
         <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[5%] lg:pt-[8%] md:pt-[7%] sm:pt-[7%] pt-[27%]">
           <div className="flex flex-col mt-[9%] w-[20%] sm:w-[50%] ">
-            <div className="text-white font-bold bg-gradient-to-r from-green-500 to-green-500/0 text-base sm:text-xl sm:w-[290px] w-[220px] xl:[200px] py-[2%] m rounded-full text-center">
+            <div className="text-white bg-gradient-to-r from-green-500 to-green-500/0 text-base sm:text-xl sm:w-[290px] w-[220px] xl:[200px] py-[2%] m rounded-full text-center">
               TECHFEST IIT ROPAR
             </div>
-            <div className="leading-[60px] sm:leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[45px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px] font-normal font-[Impact] leading-[231.75px]">
-              ADVITIYA'25
+            <div className="leading-[60px] sm:leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[45px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px]    font-normal font-[Impact] leading-[231.75px]">
+              ADVITIYA,25
             </div>
           </div>
           <div className="2xl:w-[460px] xl:w-[400px] lg:w-[350px] md:w-[300px] sm:w-[250px] w-[150px] sm:mr-[12%] lg:mr-[1%] xl:mr-[12%] -mr-[3%]  ">
@@ -106,19 +89,19 @@ export default function Page() {
         </div>
       </section>
       <section
-        className="bg-[#121720] px-[13%] py-[10%] font-kodchasan"
+        className="bg-[#121720] px-[13%] py-[10%]"
         style={{ backgroundImage: "url('/assests/images/aboutUsbg.png')" }}
       >
         <div className="flex flex-col justify-center items-center py-5">
-          <span className="text-[#3BE174] font-bold 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
+          <span className="text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
             ABOUT US
           </span>
-          <span className="text-white font-bold py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
+          <span className="text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
             ADVITIYA,24
           </span>
           <Image src={arrow} alt="..." />
         </div>
-        <div className="font-kodchasanLight text-base 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-white font-medium leading-loose text-center">
+        <div className="font-roboto text-base 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-white font-medium leading-loose text-center">
           Welcome to Zeitgeist, the most anticipated and biggest techno-cultural
           fest in North India that showcases myriad events, workshops and talk
           series and is ornamented by the presence of various big names from
@@ -128,14 +111,14 @@ export default function Page() {
       </section>
 
       <section
-        className="bg-[#121720] px-[13%] py-[5%] font-kodchasan"
+        className="bg-[#121720] px-[13%] py-[5%]"
         // style={{ backgroundImage: "url('/assests/images/aboutUsbg.png')" }}
       >
         <div className="flex flex-col justify-center items-center py-1 pb-10">
-          <span className="font-bold text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
+          <span className="text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
             OUR VIDEO
           </span>
-          <span className="font-bold text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
+          <span className="text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
             LATEST VIDEO
           </span>
           <Image src={arrow} alt="..." />
@@ -146,10 +129,10 @@ export default function Page() {
           <div className="text-white bg-green-500 h-20 w-12 rounded-r-full"></div>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <span className="py-7 text-[#3BE174] font-bold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-base">
+          <span className="py-7 text-[#3BE174] font-semibold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-base">
             THEME
           </span>
-          <div className=" w-[80vw] sm:w-[90vw] sm:px-5 font-kodchasanLight text-base 2xl:text-2xl xl:text-lg lg:text-base md:text-sm sm:text-sm text-white font-medium leading-loose text-center">
+          <div className=" w-[80vw] sm:w-[90vw] sm:px-5 font-roboto text-base 2xl:text-2xl xl:text-lg lg:text-base md:text-sm sm:text-sm text-white font-medium leading-loose text-center">
             Teleport to the 27th Edition of Techfest and celebrate the interplay
             between Magic, Science & Technology. Step into the realm of wonders
             where the frontiers of imagination are translated into real-world
@@ -161,37 +144,32 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-[#121720] ">
+      <section className="bg-[#121720]">
         <Image src={sec3bg} className="pt-10" alt="Decoration" />
       </section>
 
-      <section className="bg-[#091418] p-[10%] font-kodchasan">
+      <section className="bg-[#091418] p-[10%]">
         <div className="flex flex-col sm:flex-row md:justify-between items-center ">
           <div className="flex flex-col w-[50%] items-center sm:items-start  sm:w-[50%]  pt-[10%] sm:p-[5%]">
-            <span className="text-[#3BE174] font-bold 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base text-base">
+            <span className="text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base text-base">
               Our Competitions
             </span>
-            <span className="pb-8 font-bold text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
+            <span className="pb-8  text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
               Competitions
             </span>
             <div className="flex">
               <div
-                className="text-white bg-green-500 p-5 pb-6 pr-2 font-bold text-center rounded-l-full"
+                className="text-white bg-green-500 h-20 w-10 rounded-l-full"
                 onClick={goPrev}
-              >
-                 &lt;
-              </div>
+              ></div>
               <div
-                className="text-white bg-green-500  p-5 pl-2 font-bold text-center rounded-r-full ml-20 "
+                className="text-white bg-green-500 h-20 w-10 rounded-r-full ml-20 "
                 onClick={goNext}
-              >
-                {" "}
-                &gt;
-              </div>
+              ></div>
             </div>
           </div>
           <div></div>
-          <div className="md:w-auto w-[90vw] max-w-4xl mx-auto p-4">
+          <div className="w-auto max-w-4xl mx-auto p-4">
             {/* Swiper Component */}
             <Swiper
               ref={swiperRef} // Attach ref to Swiper
@@ -237,17 +215,17 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-[#091418] px-[13%] font-kodchasan pb-[10%]">
+      <section className="bg-[#091418] px-[13%]  pb-[10%]">
         <div className="flex flex-col justify-center items-center py-10">
-          <span className="font-bold text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
+          <span className="text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
             Our Highlights
           </span>
-          <span className="font-bold text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
+          <span className="text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
             Highlights
           </span>
           <Image src={arrow} alt="..." />
         </div>
-        <div className="font-kodchasanLight text-lg 2xl:text-5xl xl:text-4xl lg:text-3xl sm:text-2xl text-white font-medium leading-loose text-center">
+        <div className="font-roboto text-lg 2xl:text-5xl xl:text-4xl lg:text-3xl sm:text-2xl text-white font-medium leading-loose text-center">
           Welcome to Zeitgeist, the most anticipated and biggest techno-cultural
           fest in North India that showcases myriad events, workshops and talk
           series and is ornamented by the presence of various big names from

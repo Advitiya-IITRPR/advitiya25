@@ -44,18 +44,18 @@ export default function Menu() {
               Home
             </Link>
             <Link
-              href="/events"
-              onClick={toggleMenu}
-              className="text-3xl hover:text-green-400 px-10"
-            >
-              Events
-            </Link>
-            <Link
               href="/comingSoon"
               onClick={toggleMenu}
               className="text-3xl hover:text-green-400 px-10"
             >
               Workshops
+            </Link>
+            <Link
+              href="/events"
+              onClick={toggleMenu}
+              className="text-3xl hover:text-green-400 px-10"
+            >
+              Events
             </Link>
             <Link
               href="/sponsors"

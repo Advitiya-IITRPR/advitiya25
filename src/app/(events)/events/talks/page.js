@@ -7,7 +7,7 @@ import { useState } from "react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import EventSlide from "@/components/EventSlide/EventSlide";
+import EventSlide from "@/components/EventSlide";
 
 export default function Page() {
   const [s, setS] = useState(null);
@@ -26,15 +26,13 @@ export default function Page() {
         onSwiper={(swiper) => setS(swiper)}
         className="w-full flex-1"
       >
-        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} tmin={6} tmax={8} dmin={180} dmax={240} regURL={''} /></SwiperSlide>
-        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} tmin={6} tmax={8} dmin={180} dmax={240} regURL={''} /></SwiperSlide>
-        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} tmin={6} tmax={8} dmin={180} dmax={240} regURL={''} /></SwiperSlide>
-        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} tmin={6} tmax={8} dmin={180} dmax={240} regURL={''} /></SwiperSlide>
-        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} tmin={6} tmax={8} dmin={180} dmax={240} regURL={''} /></SwiperSlide>
-        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} tmin={6} tmax={8} dmin={180} dmax={240} regURL={''} /></SwiperSlide>
-        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} tmin={6} tmax={8} dmin={180} dmax={240} regURL={''} /></SwiperSlide>
-        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} tmin={6} tmax={8} dmin={180} dmax={240} regURL={''} /></SwiperSlide>
-        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} tmin={6} tmax={8} dmin={180} dmax={240} regURL={''} /></SwiperSlide>
+        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} /></SwiperSlide>
+        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} /></SwiperSlide>
+        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} /></SwiperSlide>
+        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} /></SwiperSlide>
+        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} /></SwiperSlide>
+        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} /></SwiperSlide>
+        <SwiperSlide><EventSlide img={'/assests/events/event.jpeg'} title={'Event tit le'} desc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} /></SwiperSlide>
       </Swiper>
 
       <div className="flex items-center justify-center gap-12 justify-self-end">
