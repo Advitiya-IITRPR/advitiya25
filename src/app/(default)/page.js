@@ -9,13 +9,13 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3800); // Simulate a loading time of 2 seconds
+    }, 4200); // Simulate a loading time of 2 seconds
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div>
+    <div className="">
       {loading ? <Loader /> : <Homee />}
     </div>
   );

@@ -48,7 +48,7 @@ export default function Page() {
         <div className="flex justify-center items-center">
           {!isOpen && (
             <Link href="/signin">
-              <button className="text-white md:py-[2%] py-[1%] px-6 md:px-8 text-md lg:text-lg rounded-full bg-gradient-to-b from-[#43F27F] to-[#0A772F] mr-5">
+              <button className="font-kodchasan text-white md:py-[2%] py-[1%] px-6 md:px-8 text-md lg:text-lg rounded-full bg-gradient-to-b from-[#43F27F] to-[#0A772F] mr-5">
                 Register
               </button>
             </Link>
@@ -58,7 +58,7 @@ export default function Page() {
           <div className="relative">
             <button
               onClick={toggleMenu}
-              className="text-white py-[2%] text-md md:text-lg mx-2 md:mx-4"
+              className="font-kodchasan text-white py-[2%] text-md md:text-lg mx-2 md:mx-4"
             >
               {isOpen ? "CLOSE" : "MENU"}
             </button>
@@ -90,12 +90,12 @@ export default function Page() {
                   // exit={{ opacity: 0, x: 70 }}
                   className="flex-col h-full w-full justify-start items-center text-white space-y-16"
                 >
-                  <section className="w-full flex mt-32">
+                  <section className="w-full flex mt-24">
                     {pathname === "/" ? <Svgg /> : <Svgw />}
                     <Link
                       href="/"
                       onClick={toggleMenu}
-                      className="text-3xl hover:text-green-400 px-10"
+                      className="text-3xl hover:text-green-400 px-10 font-kodchasan"
                     >
                       Home
                     </Link>
@@ -103,6 +103,7 @@ export default function Page() {
                   {[
                     { path: "/events", label: "Events" },
                     { path: "/sponsors", label: "Sponsors" },
+                    { path: "/campusambassador", label: "CA" },
                     { path: "/aboutus", label: "Our Team" },
                     { path: "/contactus", label: "Contact Us" },
                   ].map((menuItem, index) => (
@@ -111,7 +112,7 @@ export default function Page() {
                       <Link
                         href={menuItem.path}
                         onClick={toggleMenu}
-                        className="text-3xl hover:text-green-400 px-10"
+                        className="text-3xl hover:text-green-400 px-10 font-kodchasan"
                       >
                         {menuItem.label}
                       </Link>

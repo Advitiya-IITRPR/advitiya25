@@ -47,12 +47,12 @@ const App = () => {
             />
             <div className="flex flex-col items-center justify-center h-full w-full">
               <div
-                className="text-white text-[1.5rem] max-w-[15rem] font-sans tracking-wider -mt-16 mb-8 bg-gradient-to-r from-green-500 to-transparent text-center rounded-full"
+                className="text-white text-[1.5rem] max-w-[15rem] font-kodchasan tracking-wider -mt-16 mb-8 bg-gradient-to-r from-green-500 to-transparent text-center rounded-full"
                 style={{ padding: "10px 15px" }}
               >
                 HOME • REGISTER
               </div>
-              <div className="text-white text-8xl font-bold font-sans">
+              <div className="text-white text-8xl font-bold font-kodchasan">
                 Register
               </div>
             </div>
@@ -70,7 +70,7 @@ const App = () => {
             style={{ backgroundImage: "url('/signin/fbg2.png')" }}
           >
             <div className="flex h-full w-full">
-              <div className="h-full w-1/2 flex flex-col items-center justify-center font-sans gap-4">
+              <div className="h-full w-1/2 flex flex-col items-center justify-center font-kodchasan gap-4">
                 {/*<section className="w-3/4 pl-1 mx-auto flex justify-start text-lg text-[#3BE174]">
                   HACKATHONS
                 </section>*/}
@@ -117,7 +117,7 @@ const App = () => {
                   className="z-10 pointer-events-none absolute bg-no-repeat bottom-1/5"
                 />
               </div>
-              <div className="h-full w-1/2 flex flex-col items-center justify-center font-sans gap-4">
+              <div className="h-full w-1/2 flex flex-col items-center justify-center font-kodchasan gap-4">
                 {/*<section className="w-3/4 pr-1 mx-auto flex justify-end text-lg text-[#3BE174]">
                   ACCOMODATION
                 </section>*/}
@@ -166,12 +166,12 @@ const App = () => {
             />
             <div className="flex flex-col items-center justify-center h-full w-full">
               <div
-                className="text-white text-[0.6rem] max-w-[8rem] font-sans tracking-wider -mt-8 mb-4 bg-gradient-to-r from-green-500 to-transparent text-center rounded-full"
+                className="text-white text-[0.6rem] max-w-[8rem] font-kodchasan tracking-wider -mt-8 mb-4 bg-gradient-to-r from-green-500 to-transparent text-center rounded-full"
                 style={{ padding: "10px 15px" }}
               >
                 HOME • SIGN IN
               </div>
-              <div className="text-white text-4xl font-bold font-sans">
+              <div className="text-white text-4xl font-bold font-kodchasan">
                 SIGN IN
               </div>
             </div>
@@ -183,7 +183,7 @@ const App = () => {
             style={{ backgroundImage: "url('/signin/fbg2.png')" }}
           >
             <div className="flex-col h-full w-full">
-              <div className="h-1/2 w-full flex flex-col items-center justify-center font-sans gap-4">
+              <div className="h-1/2 w-full flex flex-col items-center justify-center font-kodchasan gap-4">
                 {/*<section className="w-full pl-1 flex justify-center text-md text-[#3BE174]">
                   HACKATHONS
                 </section>*/}
@@ -221,7 +221,7 @@ const App = () => {
             style={{ backgroundImage: "url('/signin/fbg2.png')" }}
           >
             <div className="flex-col h-full w-full">
-              <div className="h-1/2 w-full flex flex-col items-center justify-center font-sans gap-4">
+              <div className="h-1/2 w-full flex flex-col items-center justify-center font-kodchasan gap-4">
                 {/*<section className="w-full pl-1 flex justify-center text-md text-[#3BE174]">
                   ACCOMODATION
                 </section>*/}
