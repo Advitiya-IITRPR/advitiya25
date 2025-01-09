@@ -6,7 +6,7 @@ const MemberCard = ({ member }) => {
 
   return (
     <div
-      className="team-card"
+      className={`team-card ${showInfo ? "flipped" : ""}`}
       style={{
         width: "540px",
         position: "relative",
@@ -18,58 +18,63 @@ const MemberCard = ({ member }) => {
       onMouseEnter={() => setShowInfo(true)}
       onMouseLeave={() => setShowInfo(false)}
     >
-      {!showInfo && (
-        <div style={{ position: "relative", width: "100%", height: "70%" }}>
-          <Image
-            src={member.photo}
-            alt={member.name}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center top"
-          />
-        </div>
-      )}
-
-      {showInfo && (
-        <div
-          className="contact-info"
+      <div
+        className="team-member-photo-container"
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "70%",
+        }}
+      >
+        <Image
+          src={member.photo}
+          alt={member.name}
+          fill
           style={{
-            position: "absolute",
-            top: "0",
-            left: "0",
-            width: "100%",
-            height: "100%",
-            backgroundColor: "transparent",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            color: "#FFFFFF",
-            fontFamily: "Kodchasan, sans-serif",
-            padding: "20px",
+            objectFit: "cover",
+            objectPosition: "center top",
           }}
-        >
-          <p style={{ fontSize: "20px", margin: "0" }}>Email</p>
-          <p style={{ fontSize: "20px", margin: "5px 0", color: "#40EC7B" }}>
-            {member.email}
-          </p>
+        />
+      </div>
 
-          <div
-            style={{
-              width: "100%",
-              height: "1px",
-              background:
-                "linear-gradient(90deg, rgba(64, 236, 123, 0) 2%, #FFFFFF 51%, rgba(64, 236, 123, 0) 100%)",
-              margin: "10px 0",
-            }}
-          ></div>
+      <div
+        className="contact-info"
+        style={{
+          position: "absolute",
+          top: "0",
+          left: "0",
+          width: "100%",
+          height: "100%",
+          backgroundColor: "transparent",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "#FFFFFF",
+          fontFamily: "Kodchasan, sans-serif",
+          padding: "20px",
+        }}
+      >
+        <p style={{ fontSize: "20px", margin: "0" }}>Email</p>
+        <p style={{ fontSize: "20px", margin: "5px 0", color: "#40EC7B" }}>
+          {member.email}
+        </p>
 
-          <p style={{ fontSize: "20px", margin: "0" }}>Contact Number</p>
-          <p style={{ fontSize: "20px", margin: "5px 0", color: "#40EC7B" }}>
-            {member.phone}
-          </p>
-        </div>
-      )}
+        <div
+          style={{
+            width: "100%",
+            height: "1px",
+            background:
+              "linear-gradient(90deg, rgba(64, 236, 123, 0) 2%, #FFFFFF 51%, rgba(64, 236, 123, 0) 100%)",
+            margin: "10px 0",
+          }}
+        ></div>
+
+        <p style={{ fontSize: "20px", margin: "0" }}>Contact Number</p>
+        <p style={{ fontSize: "20px", margin: "5px 0", color: "#40EC7B" }}>
+          {member.phone}
+        </p>
+      </div>
 
       {!showInfo && (
         <>
