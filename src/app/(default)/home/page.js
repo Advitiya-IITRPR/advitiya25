@@ -159,13 +159,13 @@ const cards = [
         <Image src={sec3bg} className="pt-10" alt="Decoration" />
       </section>
 
-      <section className="bg-[#091418] p-[10%] font-kodchasan">
-        <div className="flex flex-col sm:flex-row md:justify-between items-center ">
+      <section className="bg-[#091418] p-[10%] font-kodchasan overflow-hidden">
+        <div className="flex flex-col md:flex-row md:justify-between items-center ">
           <div className="flex flex-col w-[50%] items-center sm:items-start  sm:w-[50%]  pt-[10%] sm:p-[5%]">
             <span className="text-[#3BE174] font-bold 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base text-base">
             ADVITYA&apos;25
             </span>
-            <span className="pb-8 font-bold text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
+            <span className="pb-8 font-bold text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl">
             FLAGSHIP EVENTS
             </span>
             <div className="flex">
@@ -185,7 +185,7 @@ const cards = [
             </div>
           </div>
           <div></div>
-          <div className="md:w-auto w-[90vw] max-w-4xl mx-auto p-4 hover:cursor-pointer">
+          <div className="md:w-auto w-[100vw] sm:ml-20 md:ml-0 flex-col items-end justify-center max-w-4xl mx-auto p-4 hover:cursor-pointer overflow-hidden">
             {/* Swiper Component */}
             <Swiper
               ref={swiperRef} // Attach ref to Swiper
@@ -195,7 +195,7 @@ const cards = [
               breakpoints={{
                 640: { slidesPerView: 1 },
                 768: { slidesPerView: 1 },
-                1024: { slidesPerView: 2 },
+                1150: { slidesPerView: 2 },
               }}
               className="mySwiper"
             >
