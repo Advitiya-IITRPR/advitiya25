@@ -165,12 +165,12 @@ const cards = [
             <span className="text-[#3BE174] font-bold 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base text-base">
             ADVITYA&apos;25
             </span>
-            <span className="pb-8 font-bold text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl">
+            <span className="pb-8 font-bold text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl text-sm tracking-tighter">
             FLAGSHIP EVENTS
             </span>
-            <div className="flex">
+            <div className="sm:flex hidden">
               <div
-                className="text-white bg-green-500 p-5 pb-6 pr-2 font-bold text-center rounded-l-full hover:cursor-pointer"
+                className=" text-white bg-green-500 p-5 pb-6 pr-2 font-bold text-center rounded-l-full hover:cursor-pointer"
                 onClick={goPrev}
               >
                  &lt;
@@ -185,7 +185,7 @@ const cards = [
             </div>
           </div>
           <div></div>
-          <div className="md:w-auto w-[100vw] sm:ml-20 md:ml-0 flex-col items-end justify-center max-w-4xl mx-auto p-4 hover:cursor-pointer overflow-hidden">
+          <div className="md:w-auto w-[100vw] ml-8 md:ml-0 flex-col items-end justify-center max-w-4xl mx-auto p-4 hover:cursor-pointer overflow-hidden z-50 min-w-[600px] min-[300px]:-ml-10 min-[325px]:-ml-3 min-[350px]:-ml-2 min-[420px]:ml-[12%] min-w-[620px]:-ml-0">
             {/* Swiper Component */}
             <Swiper
               ref={swiperRef} // Attach ref to Swiper
@@ -227,6 +227,30 @@ const cards = [
                   );
                 })}
             </Swiper>
+          </div>
+          <div className=" sm:hidden sm:h-0 sm:w-0 flex flex-col w-[100%] items-center sm:items-start  pt-[10%] sm:p-[5%]">
+            {/* <span className="text-[#3BE174] font-bold 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base text-base">
+            ADVITYA&apos;25
+            </span>
+             */}
+            {/* <span className="block sm:hidden pb-8 font-bold text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl">
+            FLAGSHIP EVENTS
+            </span> */}
+            <div className="flex justify-center items-center sm:hidden ">
+              <div
+                className="text-white bg-green-500 p-5 pb-6 pr-2 font-bold text-center rounded-l-full hover:cursor-pointer"
+                onClick={goPrev}
+              >
+                 &lt;
+              </div>
+              <div
+                className="text-white bg-green-500  p-5 pl-2 font-bold text-center rounded-r-full ml-20 hover:cursor-pointer"
+                onClick={goNext}
+              >
+                {" "}
+                &gt;
+              </div>
+            </div>
           </div>
         </div>
       </section>

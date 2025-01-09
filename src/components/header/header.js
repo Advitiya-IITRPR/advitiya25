@@ -48,7 +48,7 @@ export default function Page() {
         <div className="flex justify-center items-center">
           {!isOpen && (
             <Link href="/signin">
-              <button className="font-kodchasan text-white md:py-[2%] py-[1%] px-6 md:px-8 text-md lg:text-lg rounded-full bg-gradient-to-b from-[#43F27F] to-[#0A772F] mr-5">
+              <button className="min-[320px]:-mr-0.5 min-[400px]:mr-0 min-[320px]:px-4 min-[400px]:px-6 font-kodchasan text-white sm:py-[2%] py-[1%] px-6 md:px-8 text-md lg:text-lg rounded-full bg-gradient-to-b from-[#43F27F] to-[#0A772F] md:mr-5">
                 Register
               </button>
             </Link>
@@ -88,14 +88,14 @@ export default function Page() {
                   // initial={{ opacity: 0, x: -150 }}
                   // animate={{ opacity: 1, x: 0 }}
                   // exit={{ opacity: 0, x: 70 }}
-                  className="flex-col h-full w-full justify-start items-center text-white space-y-16"
+                  className="flex-col h-full w-full justify-start items-center text-white space-y-12"
                 >
-                  <section className="w-full flex mt-24">
+                  <section className="w-full flex mt-16">
                     {pathname === "/" ? <Svgg /> : <Svgw />}
                     <Link
                       href="/"
                       onClick={toggleMenu}
-                      className="text-3xl hover:text-green-400 px-10 font-kodchasan"
+                      className="md:text-3xl text-2xl hover:text-green-400 px-10 font-kodchasan"
                     >
                       Home
                     </Link>
@@ -112,7 +112,7 @@ export default function Page() {
                       <Link
                         href={menuItem.path}
                         onClick={toggleMenu}
-                        className="text-3xl hover:text-green-400 px-10 font-kodchasan"
+                        className="md:text-3xl text-2xl hover:text-green-400 px-10 font-kodchasan"
                       >
                         {menuItem.label}
                       </Link>

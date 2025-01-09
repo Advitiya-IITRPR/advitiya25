@@ -23,17 +23,17 @@ export default function Footer() {
           <section className="w-full md:h-2/5 h-1/5"></section>
 
           <section className="text-white text-5xl md:text-4xl font-bold font-sans z-50 text-center">Contact The Organizing Committee</section>
-          <section className="text-white max-w-lg md:max-w-3xl text-center text-lg md:text-xl font-sans mt-8">In case of any doubts, feel free to contact the undersigned</section>
+          <section className="z-50 text-white max-w-lg md:max-w-3xl text-center text-lg md:text-xl font-sans mt-8">In case of any doubts, feel free to contact the undersigned</section>
           <div className="w-2/5 h-[1px] bg-gradient-to-r from-[#40EC7B00] via-[#FFFFFF] to-[#40EC7B00]"></div>
 
-          <section className="hidden md:block text-white h-16 justify-center items-center text-sm md:flex font-normal"><User strokeWidth={1.75} color="white" className="text-sm" /> <pre>  Krish Soliya  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} /> <pre> 2022eeb1183@iitrpr.ac.in  </pre>
+          <section className="z-50 hidden md:block text-white h-16 justify-center items-center text-sm md:flex font-normal"><User strokeWidth={1.75} color="white" className="text-sm" /> <pre>  Krish Soliya  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} /> <pre> 2022eeb1183@iitrpr.ac.in  </pre>
           <pre className="text-white/50 text-sm">|  </pre> <Phone color="white" strokeWidth={1.75} /> <pre>  ‪+91 95121 19212‬  </pre>
         </section>
-        <section className="hidden md:block text-white justify-center items-center text-sm md:flex font-normal"><User strokeWidth={1.75} color="white" className="text-sm" /> <pre>  Mihir Kasare  </pre> <pre className="text-white/50 text-sm">| </pre> <Mail color="white" strokeWidth={1.75} /> <pre> 2022chb1052@iitrpr.ac.in   </pre>
+        <section className="z-50 hidden md:block text-white justify-center items-center text-sm md:flex font-normal"><User strokeWidth={1.75} color="white" className="text-sm" /> <pre>  Mihir Kasare  </pre> <pre className="text-white/50 text-sm">| </pre> <Mail color="white" strokeWidth={1.75} /> <pre> 2022chb1052@iitrpr.ac.in   </pre>
           <pre className="text-white/50 text-sm">|  </pre> <Phone color="white" strokeWidth={1.75} /> <pre>  ‪+91 91367 24826‬  </pre>
         </section>
 
-        <div className="block md:hidden overflow-hidden">
+        <div className="block md:hidden overflow-hidden z-50">
         <section className="text-white h-32 flex-col justify-around items-center mt-6">
           <section className="flex justify-center items-center h-8"><User strokeWidth={1.75} color="white" className="text-sm hidden sm:block" /> <pre>  Krish Soliya  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} className="hidden sm:block" /><pre>{" "}
             2022eeb1183@iitrpr.ac.in

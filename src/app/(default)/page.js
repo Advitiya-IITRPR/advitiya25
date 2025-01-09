@@ -1,30 +1,16 @@
-"use client"
-import Image from "next/image";
-import Homee from './home/page.js'
-import Loader from "@/components/loader/page.js";
-import { useState, useEffect } from 'react';
-export default function Home() {
-  const [loading, setLoading] = useState(true);
+import ClientHome from '@/components/ClientHome'
+import { cookies } from 'next/headers'
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 4200); // Simulate a loading time of 2 seconds
+export default async function Home() {
+  // Await cookies as it might be dynamic
+  const cookieStore = await cookies()
+  
+  // Get the 'hasVisited' cookie
+  const hasVisitedCookie = cookieStore.get('hasVisited')
+  
+  // Convert the cookie value to a boolean
+  const hasVisited = !!hasVisitedCookie
 
-    return () => clearTimeout(timer);
-  }, []);
-
-  return (
-    <div className="">
-      {loading ? <Loader /> : <Homee />}
-    </div>
-  );
+  // Pass the value to your client component
+  return <ClientHome initialHasVisited={hasVisited} />
 }
-// export default function Home() {
-//   return (
-//     <div>
-//        <Homee />
-//     </div>
-//   );
-// }
-

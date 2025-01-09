@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from 'react'
 import { enableBodyScroll,disableBodyScroll } from "body-scroll-lock";
 
-export default function Loader(){
+export default function Loader({setloading}){
     useEffect(() => {
         disableBodyScroll(document.body);
         return () => enableBodyScroll(document.body);
@@ -14,7 +14,10 @@ export default function Loader(){
         const startTimer = setTimeout(() => {
             setProgress(1)
         }, 1000)
-
+        //setloading to false also when this timer completes
+        setTimeout(() => {
+            setloading(false)
+        },4000)
         return () => clearTimeout(startTimer)
     }, [])
 
