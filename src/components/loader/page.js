@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from 'react'
 import { enableBodyScroll,disableBodyScroll } from "body-scroll-lock";
 
-export default function Loader(){
+export default function Loader({setloading}){
     useEffect(() => {
         disableBodyScroll(document.body);
         return () => enableBodyScroll(document.body);
@@ -13,8 +13,11 @@ export default function Loader(){
     useEffect(() => {
         const startTimer = setTimeout(() => {
             setProgress(1)
-        }, 1200)
-
+        }, 1000)
+        //setloading to false also when this timer completes
+        setTimeout(() => {
+            setloading(false)
+        },4000)
         return () => clearTimeout(startTimer)
     }, [])
 
@@ -23,7 +26,7 @@ export default function Loader(){
             if (progress < 100 && progress > 0) {
                 setProgress(prev => Math.min(prev + 1, 100))
             }
-        }, 23)
+        }, 19)
 
         return () => clearTimeout(timer)
     }, [progress])
@@ -73,7 +76,7 @@ export default function Loader(){
 </svg>
 
             </motion.section>
-            <section className="text-white text-2xl -my-4">LOADING</section>
+            <section className="text-white text-2xl -my-4 font-kodchasan">LOADING</section>
             <motion.section 
             initial={{y:0, rotate:180}}
             animate={{y:200, rotate:180}}
@@ -113,7 +116,7 @@ export default function Loader(){
             </motion.section>
 
         <section className="absolute h-96 w-96 bottom-0 right-0 flex justify-end items-end mb-4 mr-4">
-            <span className="text-white text-8xl">{progress}%</span>
+            <span className="text-white text-8xl font-kodchasan">{progress}%</span>
         </section>
         </div>
         </div>

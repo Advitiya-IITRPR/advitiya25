@@ -15,3 +15,8 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+/* include font kodchasan; */
+.font-container{
+  font-family: 'Kodchasan', sans-serif;
+}
