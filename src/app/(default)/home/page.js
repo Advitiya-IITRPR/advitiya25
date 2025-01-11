@@ -13,6 +13,15 @@ import bikeShow from "../../../../public/assests/events/bike-show.png";
 import innovateX from "../../../../public/assests/events/innovatex.png";
 import robowar from "../../../../public/assests/events/robowar.png";
 
+const kodchasan = Kodchasan({
+subsets: ["latin"],
+weight: '700'
+});
+
+const kodchasanLight = Kodchasan({ 
+  subsets: ["latin"],
+  weight: '400'
+});
 export default function Page() {
 
 
@@ -82,7 +91,6 @@ const cards = [
       >
         <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[5%] lg:pt-[8%] md:pt-[7%] sm:pt-[7%] pt-[27%]">
           <div className="flex flex-col mt-[9%] w-[20%] sm:w-[50%] ">
-
           <div className="leading-[60px] sm:leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[45px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px] font-normal font-[Impact] leading-[231.75px]">
               ADVITIYA&apos;25
             </div>
@@ -102,14 +110,13 @@ const cards = [
         </div>
       </section>
       <section
-        className="bg-[#121720] px-[13%] py-[10%]"
+        className="bg-[#121720] px-[13%] py-[10%] font-kodchasan"
         style={{ backgroundImage: "url('/assests/images/aboutUsbg.png')" }}
       >
         <div className="flex flex-col justify-center items-center py-5">
-          <span className="text-[#3BE174] 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
+          <span className="text-[#3BE174] font-bold 2xl:text-xl xl:text-lg lg:text-base md:text-base sm:text-base">
             ABOUT US
           </span>
-
           <span className="text-white font-bold py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
             ADVITIYA&apos;25
           </span>
@@ -121,7 +128,7 @@ const cards = [
       </section>
 
       <section
-        className="bg-[#121720] px-[13%] py-[5%]"
+        className="bg-[#121720] px-[13%] py-[5%] font-kodchasan"
         // style={{ backgroundImage: "url('/assests/images/aboutUsbg.png')" }}
       >
         <div className="flex flex-col justify-center items-center py-1 pb-10">
@@ -139,7 +146,7 @@ const cards = [
           <div className="text-white bg-green-500 h-20 w-12 rounded-r-full"></div>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <span className="py-7 text-[#3BE174] font-semibold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-base">
+          <span className="py-7 text-[#3BE174] font-bold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-base">
             THEME
           </span>
           <div className=" w-[80vw] sm:w-[90vw] sm:px-5 font-kodchasanLight text-base 2xl:text-2xl xl:text-lg lg:text-base md:text-sm sm:text-sm text-white font-medium leading-loose text-center">
@@ -147,7 +154,6 @@ const cards = [
           </div>
         </div>
       </section>
-
 
       <section className="bg-[#121720] pointer-events-none">
         <Image src={sec3bg} className="pt-10" alt="Decoration" />
@@ -166,15 +172,19 @@ const cards = [
               <div
                 className=" text-white bg-green-500 p-5 pb-6 pr-2 font-bold text-center rounded-l-full hover:cursor-pointer"
                 onClick={goPrev}
-              ></div>
+              >
+                 &lt;
+              </div>
               <div
                 className="text-white bg-green-500  p-5 pl-2 font-bold text-center rounded-r-full ml-20 hover:cursor-pointer"
                 onClick={goNext}
-              ></div>
+              >
+                {" "}
+                &gt;
+              </div>
             </div>
           </div>
           <div></div>
-
           <div className="md:w-auto w-[100vw] ml-8 md:ml-0 flex-col items-end justify-center max-w-4xl mx-auto p-4 hover:cursor-pointer overflow-hidden z-50 min-w-[600px] min-[300px]:-ml-10 min-[325px]:-ml-3 min-[350px]:-ml-2 min-[420px]:ml-[12%] min-w-[620px]:-ml-0">
             {/* Swiper Component */}
             <Swiper
@@ -245,15 +255,13 @@ const cards = [
         </div>
       </section>
 
-      <section className="bg-[#091418] px-[13%]  pb-[10%]">
+      <section className="bg-[#091418] px-[13%] font-kodchasan pb-[10%]">
         <div className="flex flex-col justify-center items-center py-10">
-
           <span className="font-bold text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
             Highlights
           </span>
           <Image src={arrow} alt="..." />
         </div>
-
         <div className="font-kodchasanLight text-lg 2xl:text-5xl xl:text-4xl lg:text-3xl sm:text-2xl text-white font-medium leading-loose text-center">
         Advitiya 2024, IIT Ropar&apos;s flagship technical fest, showcased an impressive lineup of events and activities that attracted thousands of participants. Highlights included thrilling competitions like Drone Racing, RC Car Racing, and Hackathons, alongside intellectually stimulating challenges such as Coding Competitions, Fin-Tech Challenges, and the Maths Arena. Workshops on cutting-edge technologies like Artificial Intelligence, Machine Learning, and Rocket Building provided hands-on learning opportunities. Esteemed professionals shared their insights during panel discussions, while the Inter-School Conclave fostered creativity among young minds with quizzes, exhibitions, and robotic showcases. The festival was inaugurated by Director Prof. Rajiv Ahuja and graced by Mr. Soarabh Pathak, VP of Maruti Suzuki, emphasizing its scale and significance.
         </div>
