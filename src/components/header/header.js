@@ -34,13 +34,11 @@ export default function Page() {
         {/* Logo */}
         <div className="md:w-[17%] w-[45%] sm:w-[40%]">
           <div className="aspect-[895/127]">
-            <Link href="/">
-              <Image
-                src={logo}
-                alt="Logo"
-                className="object-contain w-full h-full"
-              />
-            </Link>
+            <Image
+              src={logo}
+              alt="Logo"
+              className="object-contain w-full h-full"
+            />
           </div>
         </div>
 
@@ -63,18 +61,17 @@ export default function Page() {
               {isOpen ? "CLOSE" : "MENU"}
             </button>
             {isOpen && (
-              <div
-                className="bg-transparent/50 backdrop:blur-xl fixed inset-0 z-50 inset-y-[2.8rem] h-[calc(100vh-2.8rem)] md:inset-y-[4.3rem] md:h-[calc(100vh-4.3rem)] w-screen"
-                onClick={toggleMenu}
-              ></div>
+              <div className="bg-transparent/50 backdrop:blur-xl fixed inset-0 z-50 inset-y-[2.8rem] h-[calc(100vh-2.8rem)] md:inset-y-[4.3rem] md:h-[calc(100vh-4.3rem)] w-screen" onClick={toggleMenu}>
+
+              </div>
             )}
             {isOpen && (
               <motion.div
-                initial={{ opacity: 0, x: -150 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 70 }}
+              initial={{ opacity: 0, x: -150 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 70 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="fixed inset-0 inset-y-[2.8rem] h-[calc(100vh-2.8rem)] md:inset-y-[4.3rem] md:h-[calc(100vh-4.3rem)] md:w-[35%] w-screen bg-cover bg-[35%] bg-no-repeat flex flex-col justify-center items-center gap-6 z-50"
+                className="fixed inset-0 inset-y-[2.8rem] h-[calc(100vh-2.8rem)] md:inset-y-[4.3rem] md:h-[calc(100vh-4.3rem)] md:w-2/5 w-screen bg-cover bg-[-15rem] bg-no-repeat flex flex-col justify-center items-center gap-6 z-50"
                 style={{ backgroundImage: "url('/header/image.png')" }}
               >
                 {/* <img
@@ -100,14 +97,20 @@ export default function Page() {
                       Home
                     </Link>
                   </section>
+
                   {[
+                    { path: "/comingSoon", label: "Workshops" },
                     { path: "/events", label: "Events" },
+                    { path: "/comingSoon", label: "Our Team" },
                     { path: "/sponsors", label: "Sponsors" },
                     { path: "/campusambassador", label: "CA" },
                     { path: "/aboutus", label: "Our Team" },
                     { path: "/contactus", label: "Contact Us" },
                   ].map((menuItem, index) => (
-                    <section className="w-full flex" key={index}>
+                    <section
+                      className="w-full flex"
+                      key={index}
+                    >
                       {pathname === menuItem.path ? <Svgg /> : <Svgw />}
                       <Link
                         href={menuItem.path}

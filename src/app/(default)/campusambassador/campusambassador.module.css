@@ -1,0 +1,71 @@
+/* styles/campusambassador.module.css */
+
+.image-frame-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black_background {
+  color: black;
+}
+
+.margin-bottom {
+  margin-bottom: 20vh; /* 20% of the viewport height */
+}
+
+.frame {
+  position: absolute; /* Absolute positioning to place the frame above the image */
+  top: 50%; /* Position at the center vertically */
+  left: 50%; /* Position at the center horizontally */
+  transform: translate(-50%, -50%); /* Offset to truly center the frame */
+  width: 80%; /* Adjust width based on design */
+  max-width: 900px; /* Optional: Maximum width */
+  padding: 4vw 8vw; /* Add padding relative to viewport width */
+  border-radius: 15px; /* Rounded corners */
+  text-align: center; /* Center text inside the frame */
+  color: black; /* Text color */
+  z-index: 10; /* Ensure it sits above the image */
+  background: transparent; /* Remove the background color */
+}
+
+.image-frame-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fills the container */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .frame {
+    width: 85%;
+    padding: 5vw 10vw; /* Reduce padding for medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .frame {
+    width: 90%;
+    padding: 6vw 12vw; /* Further reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .frame {
+    width: 95%;
+    padding: 8vw 14vw; /* Adjust padding for very small screens */
+  }
+}
+
+@media (max-width: 400px) {
+  .frame {
+    width: 100%;
+    padding: 10vw 16vw; /* Maximize frame width for small devices */
+  }
+}
