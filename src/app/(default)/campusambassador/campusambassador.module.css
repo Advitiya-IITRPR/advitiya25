@@ -7,29 +7,41 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Prevent content from overflowing the container */
+}
+
+.image-frame-container2 {
+  position: relative;
+  width: 100%;
+  height: 20vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent content from overflowing the container */
 }
 
 .black_background {
-  color: black;
+  background-color: black;
 }
 
 .margin-bottom {
-  margin-bottom: 20vh; /* 20% of the viewport height */
+  margin-bottom: 20vh; /* Maintain spacing between sections */
 }
 
 .frame {
-  position: absolute; /* Absolute positioning to place the frame above the image */
-  top: 50%; /* Position at the center vertically */
-  left: 50%; /* Position at the center horizontally */
-  transform: translate(-50%, -50%); /* Offset to truly center the frame */
-  width: 80%; /* Adjust width based on design */
-  max-width: 900px; /* Optional: Maximum width */
-  padding: 4vw 8vw; /* Add padding relative to viewport width */
-  border-radius: 15px; /* Rounded corners */
-  text-align: center; /* Center text inside the frame */
+  position: absolute; /* Keep the frame on top of the image */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Offset to truly center */
+  width: 80%; /* Responsive width relative to the viewport */
+  max-width: 900px; /* Ensure the frame does not become too large */
+  padding: 4vw 8vw; /* Padding relative to viewport width */
+  border-radius: 15px; /* Rounded corners for better aesthetics */
+  text-align: center; /* Center text */
   color: black; /* Text color */
   z-index: 10; /* Ensure it sits above the image */
-  background: transparent; /* Remove the background color */
+  /* background: rgba(255, 255, 255, 0.8); Optional: Slight background for readability */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for visibility */
 }
 
 .image-frame-container img {
@@ -39,33 +51,36 @@
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure the image fills the container */
+  z-index: 1; /* Place image below the frame */
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .frame {
-    width: 85%;
-    padding: 5vw 10vw; /* Reduce padding for medium screens */
+    width: 85%; /* Slightly larger on smaller screens */
+    padding: 5vw 10vw;
   }
 }
 
 @media (max-width: 900px) {
   .frame {
-    width: 90%;
-    padding: 6vw 12vw; /* Further reduce padding for smaller screens */
+    width: 90%; /* Expand the frame for smaller screens */
+    padding: 6vw 12vw;
   }
 }
 
 @media (max-width: 600px) {
   .frame {
-    width: 95%;
-    padding: 8vw 14vw; /* Adjust padding for very small screens */
+    width: 95%; /* Maximize frame width for mobile screens */
+    padding: 8vw 14vw;
+    border-radius: 10px; /* Slightly smaller corners for compact design */
   }
 }
 
 @media (max-width: 400px) {
   .frame {
-    width: 100%;
-    padding: 10vw 16vw; /* Maximize frame width for small devices */
+    width: 100%; /* Full width for very small devices */
+    padding: 10vw 16vw;
+    border-radius: 8px; /* Adjust border-radius */
   }
 }

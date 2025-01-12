@@ -23,6 +23,14 @@ export default function FullScreenImageWithCenteredFrame() {
           objectFit="cover"
         />
       </div>
+      <div className={styles["image-frame-container2"]}>
+        <Image
+          src="/campusambassador/style1/frame_extra.svg"
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div className={`${styles["image-frame-container"]} ${styles["margin-bottom"]} ${styles["black_background"]} `}>
         <div className={styles.frame}>
           <Frame2 />

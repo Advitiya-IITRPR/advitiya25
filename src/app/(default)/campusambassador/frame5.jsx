@@ -1,9 +1,8 @@
-// Add the "use client" directive at the top
 "use client";
 
 import React, { useState } from "react";
 
-const Frame5 = () => {
+const Frame5 = ({ goPrev, goNext }) => {
   const [open, setOpen] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -28,7 +27,11 @@ const Frame5 = () => {
           {/* First FAQ */}
           <div className="relative p-5 bg-transparent rounded-lg shadow-lg">
             <div className="flex justify-between items-center">
-              <div className="text-white text-xl sm:text-2xl font-medium font-[Kodchasan] capitalize">
+              <div
+                className={`${
+                  open === 0 ? "text-[#36d66d]" : "text-white"
+                } text-xl sm:text-2xl font-medium font-[Kodchasan] capitalize`}
+              >
                 When will we receive our admit card for Phase 2?
               </div>
               <button
@@ -45,10 +48,14 @@ const Frame5 = () => {
             )}
           </div>
 
-          {/* Second FAQ with Description */}
+          {/* Second FAQ */}
           <div className="relative p-5 bg-transparent rounded-lg shadow-lg">
             <div className="flex justify-between items-center">
-              <div className="text-[#36d66d] text-xl sm:text-2xl font-medium font-[Kodchasan] capitalize">
+              <div
+                className={`${
+                  open === 1 ? "text-[#36d66d]" : "text-white"
+                } text-xl sm:text-2xl font-medium font-[Kodchasan] capitalize`}
+              >
                 What is the Syllabus for TSP Open Olympiad?
               </div>
               <button
@@ -68,7 +75,11 @@ const Frame5 = () => {
           {/* Third FAQ */}
           <div className="relative p-5 bg-transparent rounded-lg shadow-lg">
             <div className="flex justify-between items-center">
-              <div className="text-white text-xl sm:text-2xl font-medium font-[Kodchasan] capitalize">
+              <div
+                className={`${
+                  open === 2 ? "text-[#36d66d]" : "text-white"
+                } text-xl sm:text-2xl font-medium font-[Kodchasan] capitalize`}
+              >
                 What are the prerequisites to appear in TSP?
               </div>
               <button
@@ -86,18 +97,20 @@ const Frame5 = () => {
           </div>
         </div>
 
-        {/* Decorative Buttons */}
-        <div className="flex justify-center items-center gap-10 mt-10">
-          <button className="w-24 h-24 bg-gradient-to-b from-[#43f27f] to-[#09772f] rounded-full flex justify-center items-center cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-110">
-            <div className="w-16 h-16 bg-[#1c1c1c] rounded-full flex justify-center items-center text-white font-semibold">
-              →
-            </div>
-          </button>
-          <button className="w-24 h-24 bg-gradient-to-b from-[#43f27f] to-[#09772f] rounded-full flex justify-center items-center cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-110">
-            <div className="w-16 h-16 bg-[#1c1c1c] rounded-full flex justify-center items-center text-white font-semibold">
-              ←
-            </div>
-          </button>
+        {/* Navigation Buttons */}
+        <div className="sm:flex hidden justify-center items-center gap-20 mt-10">
+          <div
+            className="text-white bg-green-500 p-5 pb-6 pr-2 font-bold text-center rounded-l-full hover:cursor-pointer"
+            onClick={goPrev}
+          >
+            &lt;
+          </div>
+          <div
+            className="text-white bg-green-500 p-5 pl-2 font-bold text-center rounded-r-full hover:cursor-pointer"
+            onClick={goNext}
+          >
+            &gt;
+          </div>
         </div>
       </div>
     </div>

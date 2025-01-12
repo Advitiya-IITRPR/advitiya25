@@ -16,7 +16,7 @@ export default function Frame2() {
   };
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center gap-6 px-4">
+    <div className="w-full h-screen flex flex-col justify-center items-center px-4">
       <div className="w-full max-w-3xl flex flex-col justify-start items-center gap-6">
         {/* Form Section 1 */}
         <div className="w-full flex flex-col md:flex-row justify-between gap-6 md:gap-10">
