@@ -1,4 +1,4 @@
 import React from "react";
-import WorkshopsPage from './workshops/page';
+import CompetitionsPage from "./competitions/page";
 
-export default WorkshopsPage;
+export default CompetitionsPage;
