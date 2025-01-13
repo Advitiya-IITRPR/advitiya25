@@ -1,9 +1,15 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const Frame3 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [startTouch, setStartTouch] = useState(0);
+  const [endTouch, setEndTouch] = useState(0);
+  const [startDrag, setStartDrag] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [draggingDistance, setDraggingDistance] = useState(0); // track the distance dragged
+  const dragThreshold = 50; // minimum distance to consider as a valid swipe
 
   const data = [
     {
@@ -32,6 +38,66 @@ const Frame3 = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
   };
 
+  // Touch start and end (for mobile swipe)
+  const handleTouchStart = (e) => {
+    setStartTouch(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e) => {
+    setEndTouch(e.changedTouches[0].clientX);
+    handleSwipe();
+  };
+
+  const handleSwipe = () => {
+    if (startTouch - endTouch > dragThreshold) {
+      // Swiped Left
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+    } else if (endTouch - startTouch > dragThreshold) {
+      // Swiped Right
+      setCurrentIndex(
+        (prevIndex) => (prevIndex - 1 + data.length) % data.length
+      );
+    }
+  };
+
+  // Mouse drag handling
+  const handleMouseDown = (e) => {
+    setStartDrag(e.clientX);
+    setIsDragging(true);
+    setDraggingDistance(0); // Reset dragging distance at the start of drag
+  };
+
+  const handleMouseMove = (e) => {
+    if (isDragging) {
+      const diff = startDrag - e.clientX;
+      setDraggingDistance(diff);
+
+      // Only trigger change if the distance is greater than the threshold
+      if (Math.abs(diff) > dragThreshold) {
+        if (diff > 0) {
+          // Swiped Left
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+        } else {
+          // Swiped Right
+          setCurrentIndex(
+            (prevIndex) => (prevIndex - 1 + data.length) % data.length
+          );
+        }
+        // Reset drag position to avoid multiple changes
+        setStartDrag(e.clientX);
+        setIsDragging(false); // End dragging after one change
+      }
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
   const getPositionClass = (index) => {
     const relativeIndex = (index - currentIndex + data.length) % data.length;
     if (relativeIndex === 0) return "center";
@@ -39,6 +105,13 @@ const Frame3 = () => {
     if (relativeIndex === data.length - 1) return "far-left";
     return "hidden"; // Hide the image if it's not visible
   };
+
+  useEffect(() => {
+    // To prevent mouse events on mobile devices
+    if (typeof window !== "undefined" && window.ontouchstart !== undefined) {
+      document.body.style.touchAction = "none";
+    }
+  }, []);
 
   return (
     <div
@@ -48,6 +121,12 @@ const Frame3 = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onMouseDown={handleMouseDown}
+      onMouseMove={handleMouseMove}
+      onMouseUp={handleMouseUp}
+      onMouseLeave={handleMouseLeave}
     >
       {/* Header Section */}
       <div className="w-full flex justify-center items-center mb-10 translate-y-[-85px]">
