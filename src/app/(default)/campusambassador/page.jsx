@@ -6,12 +6,16 @@ import Frame2 from "./frame2";
 import Frame3 from "./frame3";
 import Frame4 from "./frame4";
 import Frame5 from "./frame5";
+import NavigationPointer from "./NavigationPointer"; // Import the navigation pointer
 import styles from "./campusambassador.module.css";
 
 export default function FullScreenImageWithCenteredFrame() {
   return (
     <div>
-      <div className={styles["image-frame-container"]}>
+      {/* Navigation Pointer */}
+      <NavigationPointer />
+
+      <div id="section1" className={styles["image-frame-container"]}>
         <div className={styles.frame}>
           <Frame1 />
         </div>
@@ -23,7 +27,8 @@ export default function FullScreenImageWithCenteredFrame() {
           objectFit="cover"
         />
       </div>
-      <div className={styles["image-frame-container2"]}>
+
+      <div id="section2" className={styles["image-frame-container2"]}>
         <Image
           src="/campusambassador/style1/frame_extra.svg"
           alt="Background Image"
@@ -31,7 +36,11 @@ export default function FullScreenImageWithCenteredFrame() {
           objectFit="cover"
         />
       </div>
-      <div className={`${styles["image-frame-container"]} ${styles["margin-bottom"]} ${styles["black_background"]} `}>
+
+      <div
+        id="section3"
+        className={`${styles["image-frame-container"]} ${styles["margin-bottom"]} ${styles["black_background"]} `}
+      >
         <div className={styles.frame}>
           <Frame2 />
         </div>
@@ -44,13 +53,13 @@ export default function FullScreenImageWithCenteredFrame() {
         />
       </div>
 
-      <div className={styles["image-frame-container"]}>
+      <div id="section4" className={styles["image-frame-container"]}>
         <div className={styles.frame}>
           <Frame3 />
         </div>
       </div>
 
-      <div className={styles["image-frame-container"]}>
+      <div id="section5" className={styles["image-frame-container"]}>
         <div className={styles.frame}>
           <Frame4 />
         </div>
@@ -63,7 +72,7 @@ export default function FullScreenImageWithCenteredFrame() {
         />
       </div>
 
-      <div className={styles["image-frame-container"]}>
+      <div id="section6" className={styles["image-frame-container"]}>
         <div className={styles.frame}>
           <Frame5 />
         </div>
