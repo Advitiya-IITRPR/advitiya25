@@ -21,6 +21,11 @@ const Frame3 = () => {
       imgSrc: "/campusambassador/style2/role_img3.png",
       number: "03",
     },
+    {
+      text: "your engage",
+      imgSrc: "/campusambassador/style2/role_img3.png",
+      number: "04",
+    },
   ];
 
   const handleImageClick = () => {
@@ -28,14 +33,16 @@ const Frame3 = () => {
   };
 
   const getPositionClass = (index) => {
-    const positions = ["center", "left", "right"];
-    return positions[(index - currentIndex + data.length) % data.length];
+    const relativeIndex = (index - currentIndex + data.length) % data.length;
+    if (relativeIndex === 0) return "center";
+    if (relativeIndex === 1) return "far-right";
+    if (relativeIndex === data.length - 1) return "far-left";
+    return "hidden"; // Hide the image if it's not visible
   };
 
   return (
     <div
-    className="w-full min-h-[75vh] px-3 sm:px-6 md:px-8 lg:px-16 py-4 flex flex-col justify-between items-center bg-transparent overflow-visible"
-
+      className="w-full min-h-[75vh] px-6 sm:px-12 md:px-20 py-8 flex flex-col justify-between items-center bg-transparent overflow-visible"
       style={{
         backgroundImage: "url('/path-to-your-image.jpg')",
         backgroundSize: "cover",
@@ -55,7 +62,7 @@ const Frame3 = () => {
       </div>
 
       {/* Main Content Section */}
-      <div className="flex justify-center items-center gap-6 sm:gap-10 w-full max-w-[1552px] mb-10 relative">
+      <div className="flex justify-center items-center gap-12 w-full max-w-[1552px] mb-12 relative">
         {data.map((item, index) => (
           <div
             key={index}
@@ -66,14 +73,13 @@ const Frame3 = () => {
             style={{
               cursor: index === currentIndex ? "pointer" : "default",
               zIndex: index === currentIndex ? 10 : 1,
-              opacity: index === currentIndex ? 1 : 0.5,
+              opacity: index === currentIndex ? 1 : 0.6,
             }}
           >
             <div className="text-center text-[#727070] text-lg sm:text-xl md:text-2xl font-bold font-['Kodchasan'] uppercase mb-6">
               {item.text}
             </div>
-            <div className="w-[300px] h-[300px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] rounded-full relative">
-              {/* Green Blur Circle behind the active image */}
+            <div className="w-[320px] h-[320px] sm:w-[340px] sm:h-[340px] md:w-[400px] md:h-[400px] rounded-full relative">
               {index === currentIndex && (
                 <div
                   className="absolute inset-0 z-[-1] bg-green-500 rounded-full blur-[30px] opacity-50"
@@ -83,7 +89,6 @@ const Frame3 = () => {
                 ></div>
               )}
 
-              {/* Number behind the active image */}
               <div
                 className={`absolute top-[-80px] left-1/2 transform -translate-x-1/2 text-white text-[300px] sm:text-[300px] md:text-[300px] font-bold z-0 transition-all duration-700 ${
                   index === currentIndex
@@ -91,7 +96,7 @@ const Frame3 = () => {
                     : "opacity-0"
                 }`}
                 style={{
-                  pointerEvents: "none", // Prevent interaction
+                  pointerEvents: "none",
                 }}
               >
                 {item.number}
@@ -101,8 +106,8 @@ const Frame3 = () => {
                 className="rounded-full"
                 src={item.imgSrc}
                 alt={item.text}
-                width={380}
-                height={380}
+                width={400}
+                height={400}
                 objectFit="cover"
               />
             </div>
@@ -119,11 +124,14 @@ const Frame3 = () => {
         .center {
           transform: translateX(0);
         }
-        .left {
-          transform: translateX(-300px) scale(0.8);
+        .far-left {
+          transform: translateX(-500px) scale(0.8);
         }
-        .right {
-          transform: translateX(300px) scale(0.8);
+        .far-right {
+          transform: translateX(500px) scale(0.8);
+        }
+        .hidden {
+          display: none;
         }
       `}</style>
     </div>
