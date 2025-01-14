@@ -19,15 +19,15 @@ export default function RootLayout({ children }) {
         <main>
           <section className="min-h-screen flex flex-col justify-center items-center text-center relative">
             <div
-              className={`text-xl font-bold text-white bg-gradient-to-r from-green-500 to-transparent px-6 py-2 my-2 rounded-full ${kodchasan.className}`}
+              className={`text-xl z-10 font-bold text-white bg-gradient-to-r from-green-500 to-transparent px-6 py-2 my-2 rounded-full ${kodchasan.className}`}
             >
               HOME • EVENTS
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl">Events & ISC</h1>
+            <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-kodchasan z-10">Events & ISC</h1>
             <Image
               src={"/assests/events/bg.png"}
               fill={true}
-              className="absolute top-0 left-0 w-full h-full mainBG -z-10"
+              className="absolute top-0 left-0 w-full h-full mainBG z-0"
               alt="Background"
             />
           </section>

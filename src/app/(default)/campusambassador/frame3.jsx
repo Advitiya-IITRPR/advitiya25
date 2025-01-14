@@ -13,22 +13,22 @@ const Frame3 = () => {
 
   const data = [
     {
-      text: "your ideate",
+      text: "you ideate",
       imgSrc: "/campusambassador/style2/role_img1.png",
       number: "01",
     },
     {
-      text: "your represent",
+      text: "you represent",
       imgSrc: "/campusambassador/style2/role_img2.png",
       number: "02",
     },
     {
-      text: "your promote",
+      text: "you promote",
       imgSrc: "/campusambassador/style2/role_img3.png",
       number: "03",
     },
     {
-      text: "your engage",
+      text: "you engage",
       imgSrc: "/campusambassador/style2/role_img3.png",
       number: "04",
     },
@@ -129,7 +129,7 @@ const Frame3 = () => {
       onMouseLeave={handleMouseLeave}
     >
       {/* Header Section */}
-      <div className="w-full flex justify-center items-center mb-10 translate-y-[-85px]">
+      <div className="w-full flex justify-center items-center mb-40 translate-y-[-85px]">
         <div className="text-center">
           <div className="text-[#3be174] text-xs sm:text-sm md:text-lg font-medium font-['Exo'] uppercase">
             role
@@ -155,7 +155,7 @@ const Frame3 = () => {
               opacity: index === currentIndex ? 1 : 0.6,
             }}
           >
-            <div className="text-center text-[#727070] text-lg sm:text-xl md:text-2xl font-bold font-['Kodchasan'] uppercase mb-6">
+            <div className={`text-center ${index == currentIndex ? 'text-white glow-text' : 'no-glow-text text-gray-600'} text-lg sm:text-xl md:text-2xl font-bold font-['Kodchasan'] uppercase mb-6`}>
               {item.text}
             </div>
             <div className="w-[320px] h-[320px] sm:w-[340px] sm:h-[340px] md:w-[400px] md:h-[400px] rounded-full relative">
@@ -195,9 +195,7 @@ const Frame3 = () => {
       </div>
 
       {/* Footer Section */}
-      <div className="text-center text-[#d8d8d8] text-sm sm:text-base md:text-lg leading-6 md:leading-8 px-4 md:px-0 max-w-[1200px]">
-        Teleport.
-      </div>
+      <div className="text-center text-[#d8d8d8] text-sm sm:text-base md:text-lg leading-6 md:leading-8 px-4 md:px-0 max-w-[1200px]"></div>
 
       <style jsx>{`
         .center {
@@ -211,6 +209,14 @@ const Frame3 = () => {
         }
         .hidden {
           display: none;
+        }
+
+        .glow-text{
+          text-shadow: 0 0 20px #fff, 0 0 30px #4dff68, 0 0 40px #4dff68, 0 0 50px #4dff68, 0 0 60px #4dff68, 0 0 70px #4dff68, 0 0 80px #4dff68;
+        }
+
+        .no-glow-text{
+          text-shadow: none;
         }
       `}</style>
     </div>

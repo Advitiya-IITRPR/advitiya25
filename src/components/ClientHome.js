@@ -21,7 +21,7 @@ export default function ClientHome({ initialHasVisited }) {
   }, [initialHasVisited])
 
   if (loading) {
-    return <Loader />
+    return <Loader setloading={setLoading} />
   }
 
   return <Homee />

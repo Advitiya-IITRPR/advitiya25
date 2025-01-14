@@ -1,0 +1,13 @@
+.faq {
+  background: linear-gradient(to bottom right, #fff2, #0000);
+  @apply px-12 py-7 rounded-3xl w-full flex-1 relative my-6
+}
+
+.faq button {
+  @apply absolute top-4 right-4 bg-green-500 text-black rounded-full h-6 w-6 text-center leading-8 cursor-pointer transition-all
+}
+
+.faq:focus button {
+  /* rotate: -180deg; */
+  @apply rotate-180
+}

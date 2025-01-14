@@ -5,6 +5,7 @@ import { Kodchasan } from "next/font/google";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 import ContactUs from "@/components/contactus/page";
+import FAQ from "@/components/FAQ/FAQ";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,26 +19,6 @@ const kodchasanLight = Kodchasan({
   subsets: ["latin"],
   weight: "400",
 });
-
-function FAQ({ title, description }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="faq group">
-      <div className={`title text-xl ${open ? "text-green-500" : ""}`}>
-        {title}
-      </div>
-      <div className={`description mt-2 ${open ? "flex" : "hidden"}`}>
-        {description}
-      </div>
-      <button
-        onClick={(e) => setOpen(!open)}
-        className={open ? "rotate-180" : ""}
-      >
-        ^
-      </button>
-    </div>
-  );
-}
 
 export default function Page() {
   const [s, setS] = useState(null);
@@ -275,9 +256,29 @@ export default function Page() {
           <div className="plankBG"></div>
           <h2 className="text-3xl md:text-5xl">OUR PRIZES</h2>
         </div>
-        <div className="flex flex-col lg:flex-row mt-12 w-full justify-evenly items-center gap-y-10">
+        <div className="flex flex-col lg:flex-row mt-12 w-full justify-evenly items-center gap-y-10 gap-x-8">
+          <div className="bg-green-400 relative  w-72 md:w-96 rounded-[2.5rem] border-white shadow-md p-2 md:p-4">
+            <div className="absolute w-[110%] h-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-t from-green-700 to-green-400 -z-[1] rounded-[3rem]"></div>
+            <div className="bg-[var(--background)] rounded-[2rem] md:rounded-[1.5rem] h-full p-2">
+              <div className="rounded-[1.7rem] md:rounded-[1rem] border border-white h-full p-4">
+                <h3 className="text-xl leading-10 font-bold text-green-500 mt-4 text-center">
+                  JUNIOR SCIENTIST OLYMPIAD
+                </h3>
+                <ul className="regBullets">
+                  <li>
+                    The junior scientist competition holds prizes worth INR
+                    25000.
+                  </li>
+                  <li>
+                    All the participants of the junior scientist competition
+                    shall be awarded a certificate of participation.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div className="bg-green-400 relative w-72 md:w-96 rounded-[2.5rem] border-white shadow-md p-2 md:p-4">
-            <div className="absolute w-[110%] md:w-[120%] h-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-t from-green-700 to-green-400 -z-[1] rounded-[3rem]"></div>
+            <div className="absolute w-[110%] h-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-t from-green-700 to-green-400 -z-[1] rounded-[3rem]"></div>
             <div className="bg-[var(--background)] rounded-[2rem] md:rounded-[1.5rem] h-full p-2">
               <div className="rounded-[1.7rem] md:rounded-[1rem] border border-white h-full p-4">
                 <h3 className="text-xl leading-10 font-bold text-green-500 mt-4 text-center">
@@ -305,27 +306,7 @@ export default function Page() {
             </div>
           </div>
           <div className="bg-green-400 relative  w-72 md:w-96 rounded-[2.5rem] border-white shadow-md p-2 md:p-4">
-            <div className="absolute w-[110%] md:w-[120%] h-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-t from-green-700 to-green-400 -z-[1] rounded-[3rem]"></div>
-            <div className="bg-[var(--background)] rounded-[2rem] md:rounded-[1.5rem] h-full p-2">
-              <div className="rounded-[1.7rem] md:rounded-[1rem] border border-white h-full p-4">
-                <h3 className="text-xl leading-10 font-bold text-green-500 mt-4 text-center">
-                  JUNIOR SCIENTIST OLYMPIAD
-                </h3>
-                <ul className="regBullets">
-                  <li>
-                    The junior scientist competition holds prizes worth INR
-                    25000.
-                  </li>
-                  <li>
-                    All the participants of the junior scientist competition
-                    shall be awarded a certificate of participation.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="bg-green-400 relative  w-72 md:w-96 rounded-[2.5rem] border-white shadow-md p-2 md:p-4">
-            <div className="absolute w-[110%] md:w-[120%] h-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-t from-green-700 to-green-400 -z-[1] rounded-[3rem]"></div>
+            <div className="absolute w-[110%] h-[70%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-t from-green-700 to-green-400 -z-[1] rounded-[3rem]"></div>
             <div className="bg-[var(--background)] rounded-[2rem] md:rounded-[1.5rem] h-full p-2">
               <div className="rounded-[1.7rem] md:rounded-[1rem] border border-white h-full p-4">
                 <h3 className="text-xl leading-10 font-bold text-green-500 mt-4 text-center">

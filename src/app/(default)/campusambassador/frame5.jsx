@@ -10,12 +10,12 @@ const Frame5 = ({ goPrev, goNext }) => {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-transparent">
+    <div className="w-full min-h-screen flex justify-center items-center bg-transparent py-8">
       <div className="max-w-7xl w-full p-8 space-y-12 text-center">
         {/* Header Section */}
         <div className="text-center">
           <div className="text-[#3be174] text-lg font-medium uppercase font-[Exo]">
-            FAQ’S
+            FAQs
           </div>
           <div className="text-white text-4xl sm:text-6xl font-bold uppercase font-[Kodchasan]">
             Frequently Asked Questions

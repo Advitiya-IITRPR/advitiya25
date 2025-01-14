@@ -17,7 +17,7 @@ export default function EventsNav() {
   const [open, setOpen] = useState(false);
   return (
     <section
-      className={`w-60 md:w-min overflow-x-auto flex justify-evenly items-center gap-y-2 flex-col md:flex-row mx-auto text-center my-10 bg-gradient-to-b md:bg-gradient-to-r from-slate-600 px-10 py-4 rounded-3xl md:rounded-full ${kodchasan.className}`}
+      className={`text-white w-60 md:w-min overflow-x-auto flex justify-evenly items-center gap-y-2 flex-col md:flex-row mx-auto text-center my-10 bg-gradient-to-b md:bg-gradient-to-r from-slate-600 px-10 py-4 rounded-3xl md:rounded-full ${kodchasan.className}`}
     >
       <button
         className="flex relative md:hidden mx-auto"
