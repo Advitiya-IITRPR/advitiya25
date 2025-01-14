@@ -12,6 +12,7 @@ import fullThrottle from "../../../../public/assests/events/full-throttle.png";
 import flightFury from "../../../../public/assests/events/flight-fury.png";
 import beyondZenith from "../../../../public/assests/events/beyond-zenith.png";
 import robowar from "../../../../public/assests/events/robowar.png";
+import EventSlide from "@/components/EventSlide/EventSlide";
 
 const kodchasan = Kodchasan({
   subsets: ["latin"],
@@ -84,10 +85,10 @@ export default function Page() {
   return (
     <div>
       <section
-        className="bg-cover bg-center h-[50vh] sm:h-[120vh] w-full font-kodchasan bg-no-repeat overflow-x-hidden pointer-events-none"
+        className="bg-cover bg-center h-[50vh] sm:h-[100vh] lg:h-[100vh] xl:h-[120vh] w-full font-kodchasan bg-no-repeat overflow-x-hidden pointer-events-none"
         style={{ backgroundImage: "url('/assests/images/Homepage.png')" }}
       >
-        <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[5%] lg:pt-[8%] md:pt-[7%] sm:pt-[7%] pt-[27%]">
+        <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[15vh] lg:pt-[15vh] md:pt-[20vh] sm:pt-[20vh] pt-[10vh]">
           <div className="flex flex-col mt-[9%] w-[20%] sm:w-[50%] ">
             <div className="leading-[60px] sm:leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[45px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px] font-normal font-[Impact] leading-[231.75px]">
               ADVITIYA&apos;25
@@ -233,26 +234,16 @@ export default function Page() {
                 cards.map((card) => {
                   return (
                     <SwiperSlide key={card.id}>
-                      <div
-                        key={card.id}
-                        className="flex flex-col justify-around items-center w-[300px] px-4 py-4 bg-[#131b23] rounded-2xl border-white"
-                      >
-                        <div className="bg-gradient-radial from-[3131b23] to-[#36362f]">
-                          <Image
-                            src={card.image}
-                            className="w-[240px]"
-                            alt="Decoration"
-                          />
-                        </div>
-                        <h3 className="text-3xl font-semibold text-white  ">
-                          {card.title}
-                        </h3>
-                        <div className="h-[0.1] w-[100%] bg-white my-2"></div>
-                        <p className="text-xl text-white text-center my-3 w-full">
-                          {card.content}
-                        </p>
-                        <div className="bg-[#40EC7B] h-2 w-[70%] rounded-t-xl"></div>
-                      </div>
+                      <EventSlide
+                                  img={card.image}
+                                  title={card.title}
+                                  desc={card.content}
+                                  tmin={6}
+                                  tmax={8}
+                                  dmin={180}
+                                  dmax={240}
+                                  regURL={""}
+                                />
                     </SwiperSlide>
                   );
                 })}
@@ -311,3 +302,5 @@ export default function Page() {
     </div>
   );
 }
+
+ 
