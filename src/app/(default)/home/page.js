@@ -97,7 +97,7 @@ export default function Page() {
               TECHFEST IIT ROPAR
             </div>
           </div>
-          <div className="2xl:w-[460px] xl:w-[400px] lg:w-[350px] md:w-[300px] sm:w-[250px] w-[150px] sm:mr-[12%] lg:mr-[1%] xl:mr-[6%] -mr-[3%]  ">
+          <div className="2xl:w-[460px] xl:w-[400px] lg:w-[350px] md:w-[300px] sm:w-[250px] w-[150px] sm:mr-[0%] lg:mr-[1%] xl:mr-[6%] -mr-[3%]  ">
             <div className="aspect-[420/590]">
               <Image
                 src={mascot}
