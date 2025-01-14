@@ -10,6 +10,10 @@ const kodchasan = Kodchasan({
   weight: "500",
 });
 
+export const metadata = {
+  title: "Events | Advitiya '25"
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

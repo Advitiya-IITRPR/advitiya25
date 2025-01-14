@@ -15,7 +15,7 @@ const kodchasanLight = Kodchasan({
   weight: '400'
 });
 
-function ContactUser({post, name, phone, email}){
+export function ContactUser({post, name, phone, email}){
   return (
     <div className="m-4 rounded-3xl bg-gradient-to-b from-green-500 via-transparent to-transparent p-[2px] contact-user h-full">
       <div className="rounded-3xl p-4 h-full">

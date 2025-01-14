@@ -24,6 +24,7 @@ const kodchasanLight = Kodchasan({
   subsets: ["latin"],
   weight: "400",
 });
+
 export default function Page() {
   // const kodchasanLight = Kodchasan({
   //   subsets: ["latin"],
