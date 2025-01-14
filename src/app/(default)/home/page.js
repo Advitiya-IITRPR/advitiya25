@@ -161,7 +161,7 @@ export default function Page() {
             OUR VIDEOS
           </span>
           <span className="font-bold text-white py-2 2xl:text-6xl xl:text-5xl lg:text-4xl md:text-4xl sm:text-4xl">
-            PREVIOUS FESTS
+            TEASER
           </span>
           <Image src={arrow} alt="..." />
         </div>
@@ -177,7 +177,7 @@ export default function Page() {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe> */}
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/C7J50AguVK8?si=E5bHsYJ934J-STrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/C7J50AguVK8?si=E5bHsYJ934J-STrg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           {/* <div className="text-white bg-green-500 h-20 w-12 rounded-r-full"></div> */}
         </div>
         <div className="flex flex-col justify-center items-center my-12">

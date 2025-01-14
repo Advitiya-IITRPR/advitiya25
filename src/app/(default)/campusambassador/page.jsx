@@ -162,7 +162,7 @@ export default function FullScreenImageWithCenteredFrame() {
       </div> */}
 
       
-      <section className="min-h-[150vh] flex flex-col items-center font-kodchasan relative p-8 md:p-20 text-white">
+      {/* <section className="min-h-[150vh] flex flex-col items-center font-kodchasan relative p-8 md:p-20 text-white">
         <h2 className="text-4xl md:text-5xl font-bold text-center">
           FREQUENTLY ASKED QUESTIONS
         </h2>
@@ -207,7 +207,7 @@ export default function FullScreenImageWithCenteredFrame() {
           <div className="flex-1"></div>
         </div>
         <div className={styles.mountBG}></div>
-      </section>
+      </section> */}
     </div>
   );
 }
