@@ -32,7 +32,7 @@ export default function EventSlide({
           <div className="w-full mt-4 flex flex-col justify-center items-center text-center">
             <h2 className="text-xl md:text-2xl font-bold mt-0">{title}</h2>
             <span className="w-full h-[1px] bg-gradient-to-r from-transparent to-transparent via-green-500 my-1"></span>
-            <p>{desc}</p>
+            <p className="line-clamp-2">{desc}</p>
           </div>
         </div>
         <div className="flip-card-back rounded-3xl p-4 h-full flex flex-col justify-evenly">
@@ -52,7 +52,7 @@ export default function EventSlide({
           <span className="text-green-500">
             {dmin}-{dmax} mins
           </span>
-          <Link href={regURL || ""} className="underline">
+          <Link href={regURL || ""} className="underline" target="_blank">
             REGISTER
           </Link>
         </div>

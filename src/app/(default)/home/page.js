@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 import mascot from "../../../../public/assests/images/mascot1.png";
+// import mascot from "../../../../public/better_mascot.png";
 import arrow from "../../../../public/assests/images/aboutusLogo.png";
 import Lvideo from "../../../../public/assests/images/Lvideo.png";
 import sec3bg from "../../../../public/assests/images/sec3bg.png";
@@ -35,24 +36,28 @@ export default function Page() {
       title: "Full Throttle",
       content: "The ultimate racing competition",
       image: fullThrottle,
+      link: 'https://unstop.com/competitions/full-throttle-advitiya25-indian-institute-of-technology-iit-ropar-1355796'
     },
     {
       id: 2,
       title: "Flight Fury",
       content: "Showcase your bike and win exciting prizes",
       image: flightFury,
+      link: 'https://unstop.com/competitions/flight-fury-advitiya25-indian-institute-of-technology-iit-ropar-1355781'
     },
     {
       id: 3,
       title: "Beyond Zenith",
       content: "Showcase your innovation and win exciting prizes",
       image: beyondZenith,
+      link: 'https://unstop.com/competitions/beyond-zenith-class-e-rocket-launching-competition-advitiya25-indian-institute-of-technology-iit-ropar-1360248'
     },
     {
       id: 4,
       title: "Robowar",
       content: "The ultimate battle of robots",
       image: robowar,
+      link: 'https://unstop.com/competitions/robowars-advitiya25-indian-institute-of-technology-ropar-1355785'
     },
   ];
 
@@ -85,10 +90,10 @@ export default function Page() {
   return (
     <div>
       <section
-        className="bg-cover bg-center h-[50vh] sm:h-[100vh] md:h-[60vh] lg:h-[100vh] xl:h-[120vh] w-full font-kodchasan bg-no-repeat overflow-x-hidden pointer-events-none"
+        className="bg-cover bg-center h-[50vh] sm:h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[120vh] w-full font-kodchasan bg-no-repeat overflow-x-hidden pointer-events-none"
         style={{ backgroundImage: "url('/assests/images/Homepage.png')" }}
       >
-        <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[15vh] lg:pt-[15vh] md:pt-[15vh] sm:pt-[20vh] pt-[10vh]">
+        {/* <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[15vh] lg:pt-[15vh] md:pt-[15vh] sm:pt-[20vh] pt-[10vh]">
           <div className="flex flex-col mt-[9%] w-[20%] sm:w-[50%] ">
             <div className="leading-[60px] sm:leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[45px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px] font-normal font-[Impact] leading-[231.75px]">
               ADVITIYA&apos;25
@@ -105,6 +110,14 @@ export default function Page() {
                 className="object-contain w-full h-full"
               />
             </div>
+          </div>
+        </div> */}
+        <div className="h-full flex flex-col justify-center items-center lg:-mt-24">
+          <div className="leading-[60px] sm:leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[45px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px] font-normal font-[Impact] leading-[231.75px]">
+            ADVITIYA&apos;25
+          </div>
+          <div className="text-white font-bold bg-gradient-to-r from-green-500 to-green-500/0 text-base sm:text-xl sm:w-[290px] w-[220px] xl:[200px] py-[2%] m rounded-full text-center">
+            TECHFEST IIT ROPAR
           </div>
         </div>
       </section>
@@ -152,8 +165,8 @@ export default function Page() {
           <Image src={arrow} alt="..." />
         </div>
         <div className="flex justify-center items-center">
-          <div className="text-white bg-green-500 h-20 w-12 rounded-l-full"></div>
-          <iframe
+          {/* <div className="text-white bg-green-500 h-20 w-12 rounded-l-full"></div> */}
+          {/* <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/Fwn-ZAxCq4g?si=6bMT_FfLTWpbRmFC"
@@ -162,10 +175,11 @@ export default function Page() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-          ></iframe>
-          <div className="text-white bg-green-500 h-20 w-12 rounded-r-full"></div>
+          ></iframe> */}
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/C7J50AguVK8?si=E5bHsYJ934J-STrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          {/* <div className="text-white bg-green-500 h-20 w-12 rounded-r-full"></div> */}
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center my-12">
           <span className="py-7 text-[#3BE174] font-bold 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-base">
             THEME
           </span>
@@ -186,9 +200,9 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-[#121720] pointer-events-none">
+      {/* <section className="bg-[#121720] pointer-events-none">
         <Image src={sec3bg} className="pt-10" alt="Decoration" />
-      </section>
+      </section> */}
 
       <section className="bg-[#091418] p-[10%] font-kodchasan overflow-hidden">
         <div className="flex flex-col md:flex-row md:justify-between items-center ">
@@ -242,7 +256,7 @@ export default function Page() {
                                   tmax={8}
                                   dmin={180}
                                   dmax={240}
-                                  regURL={""}
+                                  regURL={card.link}
                                 />
                     </SwiperSlide>
                   );

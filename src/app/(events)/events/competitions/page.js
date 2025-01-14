@@ -321,7 +321,7 @@ export default function Page() {
         </SwiperSlide>
       </Swiper>
 
-      <div className="flex items-center justify-center gap-12 justify-self-end">
+      <div className="flex items-center justify-center gap-12 justify-self-end z-10">
         <button
           className="rounded-l-full bg-gradient-to-r from-green-500 to-green-700 p-4 pr-2 cursor-pointer hover:bg-green-700"
           onClick={(e) => s.slidePrev()}

@@ -32,18 +32,15 @@ export default function EventsNav() {
       {/* <Link href={'/events/talks'} className={`flex-1 md:px-6 md:flex ${path.indexOf('talks') != -1 ? 'text-green-500 !flex' : ''} ${open ? 'flex' : 'hidden'}`}>Talks</Link> */}
       <Link
         href={"/events/competitions"}
-        className={`flex-1 md:px-6 md:flex ${
-          path.indexOf("competitions") != -1 ? "text-green-500 !flex" : ""
-        } ${open ? "flex" : "hidden"}`}
+        className={`flex-1 md:px-6 md:flex ${path.indexOf('competitions') != -1 || path == '/events' ? 'text-green-500 !flex' : ''} ${open ? 'flex' : 'hidden'}`}
       >
         Competitions
       </Link>
       {/* <Link href={'/events/exhibitions'} className={`flex-1 md:px-6 md:flex ${path.indexOf('exhibitions') != -1 ? 'text-green-500 !flex' : ''} ${open ? 'flex' : 'hidden'}`}>Exhibitions</Link> */}
       <Link
         href={"/events/isc"}
-        className={`flex-1 md:px-6 md:flex ${
-          path.indexOf("isc") != -1 ? "text-green-500 !flex" : ""
-        } ${open ? "flex" : "hidden"}`}
+        className={`flex-1 md:px-6 md:flex ${path.indexOf("isc") != -1 ? "text-green-500 !flex" : ""
+          } ${open ? "flex" : "hidden"}`}
       >
         ISC
       </Link>
