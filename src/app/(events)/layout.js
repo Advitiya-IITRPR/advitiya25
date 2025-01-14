@@ -7,7 +7,7 @@ import EventsNav from "@/components/EventsNav";
 import Header from "@/components/header/header";
 const kodchasan = Kodchasan({
   subsets: ["latin"],
-  weight: "700",
+  weight: "500",
 });
 
 export default function RootLayout({ children }) {

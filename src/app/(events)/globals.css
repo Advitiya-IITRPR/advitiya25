@@ -165,3 +165,7 @@ h1 {
   /* z-index: -1; */
   background: url('/assests/events/mascot.png') no-repeat center bottom/contain;
 }
+
+.fontweightspecific{
+  font-weight: 100;
+}

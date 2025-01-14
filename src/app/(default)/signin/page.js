@@ -9,7 +9,7 @@ import {
   TbBrandTiktokFilled,
   TbBrandYoutubeFilled,
 } from "react-icons/tb";
-
+import Image from "next/image";
 const App = () => {
   const [scrollY, setScrollY] = useState(0);
 
