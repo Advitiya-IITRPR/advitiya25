@@ -21,16 +21,16 @@ export default function EventSlide({
     <div className="flip-card m-4 p-[2px] mx-auto">
       <div className="flip-card-inner rounded-3xl bg-gradient-to-b from-green-500 via-transparent p-[2px] to-transparent h-full w-full">
         <div className="flip-card-front rounded-3xl p-4 h-full">
-          <div className="w-full h-1/2 relative mb-2 image">
+          <div className="mx-auto aspect-square relative image">
             <Image
               src={img}
               fill={true}
-              className="rounded-xl object-cover"
+              className="rounded-xl object-contain"
               alt="Decoration"
             />
           </div>
-          <div className="w-full h-1/2 flex flex-col justify-center items-center text-center">
-            <h2 className="text-xl md:text-2xl font-bold">{title}</h2>
+          <div className="w-full mt-4 flex flex-col justify-center items-center text-center">
+            <h2 className="text-xl md:text-2xl font-bold mt-0">{title}</h2>
             <span className="w-full h-[1px] bg-gradient-to-r from-transparent to-transparent via-green-500 my-1"></span>
             <p>{desc}</p>
           </div>
