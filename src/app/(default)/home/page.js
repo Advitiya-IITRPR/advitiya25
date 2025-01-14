@@ -121,7 +121,7 @@ export default function Page() {
           </span>
           <Image src={arrow} alt="..." />
         </div>
-        <div className="font-kodchasanLight text-base 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-white font-medium leading-loose text-center">
+        <div className="font-kodchasanLight text-base 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-base text-white font-medium leading-loose text-center">
           Advitiya 2025, IIT Ropar&apos;s annual tech fest, themed &quot;The
           Crucible of Tomorrow,&quot; is set to be a landmark event showcasing
           the best of technological innovation and intellectual prowess. The
@@ -283,7 +283,7 @@ export default function Page() {
           </span>
           <Image src={arrow} alt="..." />
         </div>
-        <div className="font-kodchasanLight text-lg 2xl:text-5xl xl:text-4xl lg:text-3xl sm:text-2xl text-white font-medium leading-loose text-center">
+        <div className="font-kodchasanLight text-base 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-base text-white font-medium leading-loose text-center">
           Advitiya 2024, IIT Ropar&apos;s flagship technical fest, showcased an
           impressive lineup of events and activities that attracted thousands of
           participants. Highlights included thrilling competitions like Drone
