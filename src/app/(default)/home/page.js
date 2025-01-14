@@ -85,10 +85,10 @@ export default function Page() {
   return (
     <div>
       <section
-        className="bg-cover bg-center h-[50vh] sm:h-[100vh] lg:h-[100vh] xl:h-[120vh] w-full font-kodchasan bg-no-repeat overflow-x-hidden pointer-events-none"
+        className="bg-cover bg-center h-[50vh] sm:h-[100vh] md:h-[60vh] lg:h-[100vh] xl:h-[120vh] w-full font-kodchasan bg-no-repeat overflow-x-hidden pointer-events-none"
         style={{ backgroundImage: "url('/assests/images/Homepage.png')" }}
       >
-        <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[15vh] lg:pt-[15vh] md:pt-[20vh] sm:pt-[20vh] pt-[10vh]">
+        <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[15vh] lg:pt-[15vh] md:pt-[15vh] sm:pt-[20vh] pt-[10vh]">
           <div className="flex flex-col mt-[9%] w-[20%] sm:w-[50%] ">
             <div className="leading-[60px] sm:leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[45px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px] font-normal font-[Impact] leading-[231.75px]">
               ADVITIYA&apos;25
@@ -97,7 +97,7 @@ export default function Page() {
               TECHFEST IIT ROPAR
             </div>
           </div>
-          <div className="2xl:w-[460px] xl:w-[400px] lg:w-[350px] md:w-[300px] sm:w-[250px] w-[150px] sm:mr-[12%] lg:mr-[1%] xl:mr-[10%] -mr-[3%]  ">
+          <div className="2xl:w-[460px] xl:w-[400px] lg:w-[350px] md:w-[300px] sm:w-[250px] w-[150px] sm:mr-[0%] lg:mr-[1%] xl:mr-[6%] -mr-[3%]  ">
             <div className="aspect-[420/590]">
               <Image
                 src={mascot}
@@ -121,7 +121,7 @@ export default function Page() {
           </span>
           <Image src={arrow} alt="..." />
         </div>
-        <div className="font-kodchasanLight text-base 2xl:text-5xl xl:text-4xl lg:text-3xl md:text-2xl sm:text-xl text-white font-medium leading-loose text-center">
+        <div className="font-kodchasanLight text-base 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-base text-white font-medium leading-loose text-center">
           Advitiya 2025, IIT Ropar&apos;s annual tech fest, themed &quot;The
           Crucible of Tomorrow,&quot; is set to be a landmark event showcasing
           the best of technological innovation and intellectual prowess. The
@@ -215,8 +215,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div></div>
-          <div className="md:w-auto w-[100vw] ml-8 md:ml-0 flex-col items-end justify-center max-w-4xl mx-auto p-4 hover:cursor-pointer overflow-hidden z-50 min-w-[600px] min-[300px]:-ml-10 min-[325px]:-ml-3 min-[350px]:-ml-2 min-[420px]:ml-[12%] min-w-[620px]:-ml-0">
+         
+          <div className="md:w-auto w-[100vw] ml-8 md:ml-0 flex-col items-end justify-center max-w-4xl p-4 hover:cursor-pointer overflow-hidden z-50 min-w-[600px] min-[300px]:-ml-10 min-[325px]:-ml-3 min-[350px]:-ml-2 min-[420px]:ml-[12%] min-w-[620px]:-ml-0">
             {/* Swiper Component */}
             <Swiper
               ref={swiperRef} // Attach ref to Swiper
@@ -283,7 +283,7 @@ export default function Page() {
           </span>
           <Image src={arrow} alt="..." />
         </div>
-        <div className="font-kodchasanLight text-lg 2xl:text-5xl xl:text-4xl lg:text-3xl sm:text-2xl text-white font-medium leading-loose text-center">
+        <div className="font-kodchasanLight text-base 2xl:text-3xl xl:text-2xl lg:text-xl md:text-lg sm:text-base text-white font-medium leading-loose text-center">
           Advitiya 2024, IIT Ropar&apos;s flagship technical fest, showcased an
           impressive lineup of events and activities that attracted thousands of
           participants. Highlights included thrilling competitions like Drone

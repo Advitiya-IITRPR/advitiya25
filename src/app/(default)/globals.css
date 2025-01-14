@@ -20,3 +20,7 @@ body::-webkit-scrollbar {
 .font-container{
   font-family: 'Kodchasan', sans-serif;
 }
+
+.fontweightspecific{
+  font-weight: 500;
+}
