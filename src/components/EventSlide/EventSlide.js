@@ -5,6 +5,7 @@ import "./EventSlide.css";
 
 const kodchasan = Kodchasan({
   weight: "700",
+  subsets: ["latin"],
 });
 
 export default function EventSlide({
