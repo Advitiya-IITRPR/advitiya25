@@ -6,15 +6,61 @@ import styles from './SlidingLogos.module.css'
 import Link from 'next/link'
 const SlidingLogos = ({ logoCount = 16, direction = 'normal' }) => {
   const [isHovered, setIsHovered] = useState(false)
-
-  const logos = Array.from({ length: logoCount }, (_, index) => ({
-    src: `/sponsors/companylogos/logo${index + 1}.png`,
-    alt: `Logo ${index + 1}`,
-    href: `/events`,
-  }))
+  const sponsors = [
+    {
+      src: '/sponsors/companylogos/logo_1.png',
+      alt: 'logo1',
+      link: "https://www.aerosocietyindia.co.in/"
+    },
+    {
+      src: '/sponsors/companylogos/finlatics.png',
+      alt: 'logo2',
+      link: "https://www.finlatics.com/"
+    },
+    {
+      src: '/sponsors/companylogos/logo_3.png',
+      alt: 'logo3',
+      link: "https://www.samaro.ai/"
+    },
+    {
+      src: '/sponsors/companylogos/logo_4.png',
+      alt: 'logo4',
+      link: "https://swiftrut.com/"
+    },
+    {
+      src: '/sponsors/companylogos/logo_5.png',
+      alt: 'logo5',
+      link: "https://www.truscholar.io/"
+    },
+    {
+      src: '/sponsors/companylogos/logo_6.png',
+      alt: 'logo6',
+      link: "https://www.icicibank.com/"
+    },
+    {
+      src: '/sponsors/companylogos/logo_7.jpg',
+      alt: 'logo7',
+      link: "https://edufabrica.net/"
+    },
+    {
+      src: '/sponsors/companylogos/ixigo.png',
+      alt: 'logo8',
+      link: "https://www.ixigo.com/"
+    },
+    {
+      src: '/sponsors/companylogos/logo_9.jpg',
+      alt: 'logo9',
+      link: "https://jpdhub.com/"
+    },
+    {
+      src: '/sponsors/companylogos/logo_10.jpg',
+      alt: 'logo10',
+      link: "https://wayspire.in/"
+    }
+  ]
 
   // Duplicate logos for seamless loop
-  const duplicatedLogos = [...logos, ...logos]
+  const duplicatedSponsors = [...sponsors, ...sponsors]
 
   return (
     <div className={styles.marqueeContainer}>
@@ -27,15 +73,15 @@ const SlidingLogos = ({ logoCount = 16, direction = 'normal' }) => {
         onMouseLeave={() => setIsHovered(false)}
       >
         <div className={styles.logoWrapper}>
-          {duplicatedLogos.map((logo, index) => (
-            <div key={index} className={`${styles.logoItem}`}>
-              <Link href={logo.href}>
+          {duplicatedSponsors.map((sponsor, index) => (
+            <div key={index} className={`${styles.logoItem} ${sponsor.alt == 'logo2' ? 'bg-white p-6' : ''} rounded-xl`}>
+              <Link href={sponsor.link}>
               <Image
-                src={logo.src}
-                alt={logo.alt}
+                src={sponsor.src}
+                alt={sponsor.alt}
                 width={300}
                 height={200}
-                className={`${styles.logoImage}`}
+                className={`${styles.logoImage} rounded-xl`}
               />
               </Link>
             </div>

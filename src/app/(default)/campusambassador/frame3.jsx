@@ -14,22 +14,22 @@ const Frame3 = () => {
   const data = [
     {
       text: "you ideate",
-      imgSrc: "/campusambassador/style2/role_img1.png",
+      imgSrc: "/campusambassador/style2/you_ideate.webp",
       number: "01",
     },
     {
       text: "you represent",
-      imgSrc: "/campusambassador/style2/role_img2.png",
+      imgSrc: "/campusambassador/style2/you_represent.webp",
       number: "02",
     },
     {
       text: "you promote",
-      imgSrc: "/campusambassador/style2/role_img3.png",
+      imgSrc: "/campusambassador/style2/you_promote.webp",
       number: "03",
     },
     {
       text: "you engage",
-      imgSrc: "/campusambassador/style2/role_img3.png",
+      imgSrc: "/campusambassador/style2/you_engage.webp",
       number: "04",
     },
   ];
