@@ -9,7 +9,7 @@ import {
   TbBrandTiktokFilled,
   TbBrandYoutubeFilled,
 } from "react-icons/tb";
-import Image from "next/image";
+
 const App = () => {
   const [scrollY, setScrollY] = useState(0);
 
@@ -78,12 +78,20 @@ const App = () => {
                   HACKATHONS
                 </section>
                 <section className="w-3/4 mx-auto flex justify-start text-lg text-white">
-                Fill the form for more info
+                RoboAI Hackathon
                 </section>
                 <section className="w-3/4 mx-auto flex justify-start">
-                  <button className="h-14 w-44 rounded-full text-lg font-bold bg-gradient-to-b from-[#43F27F] to-[#0A772F] text-white">
-                    CLICK TO OPEN
-                  </button>
+                 <a href = "https://unstop.com/hackathons/roboai-hackathon-advitiya25-indian-institute-of-technology-iit-ropar-1323552" ><button className="h-14 w-44 rounded-full text-lg font-bold bg-gradient-to-b from-[#43F27F] to-[#0A772F] text-white">
+                    CLICK TO REGISTER
+                  </button> </a>
+                </section>
+                <section className="w-3/4 mx-auto flex justify-start text-lg text-white">
+                Advitiya x JPD Hub Hackathon
+                </section>
+                <section className="w-3/4 mx-auto flex justify-start">
+                  <a href ="https://unstop.com/hackathons/advitiya-x-jpd-hub-hackathon-advitiya25-indian-institute-of-technology-iit-ropar-1322740"><button className="h-14 w-44 rounded-full text-lg font-bold bg-gradient-to-b from-[#43F27F] to-[#0A772F] text-white">
+                    CLICK TO REGISTER
+                  </button> </a>
                 </section>
               </div>
               <div className="h-full w-1/2 flex items-center justify-center relative">
@@ -129,7 +137,7 @@ const App = () => {
                 </section>
                 <section className="w-3/4 mx-auto flex justify-end">
                   <button className="h-14 w-44 rounded-full text-lg font-bold bg-gradient-to-b from-[#43F27F] to-[#0A772F] text-white">
-                    CLICK TO OPEN
+                    Coming Soon
                   </button>
                 </section>
               </div>
