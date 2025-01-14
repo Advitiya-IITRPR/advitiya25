@@ -2,26 +2,47 @@
   position: relative;
   width: 100%;
   height: 200px;
+  overflow: hidden;
 }
 
 .marquee {
   display: flex;
-  width: calc(200%);
+  width: 200%;
   animation: marquee 30s linear infinite;
+}
+
+.marquee.paused {
+  animation-play-state: paused;
 }
 
 .logoWrapper {
   display: flex;
-  align-items: center;
+  width: 100%;
 }
 
 .logoItem {
   flex-shrink: 0;
-  margin: 0 10px;
+  width: calc(100% / 5);
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logoImage {
-  height: 120px;
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @media (min-width: 768px) {
@@ -29,7 +50,10 @@
     height: 250px;
   }
   .logoImage {
-    height: 200px;
+    max-height: 200px;
+  }
+  .logoItem{
+    width: calc(100%/10);
   }
 }
 
@@ -38,15 +62,7 @@
     height: 300px;
   }
   .logoImage {
-    height: 300px;
+    max-height: 300px;
   }
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}

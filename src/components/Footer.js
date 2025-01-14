@@ -35,7 +35,7 @@ export default function Footer() {
 
         <div className="block md:hidden overflow-hidden z-50">
         <section className="text-white h-32 flex-col justify-around items-center mt-6">
-          <section className="flex justify-center items-center h-8"><User strokeWidth={1.75} color="white" className="text-sm hidden sm:block" /> <pre>  Krish Soliya  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} className="hidden sm:block" /><pre>{" "}
+          <section className="flex justify-center items-center h-8"><User strokeWidth={1.75} color="white" className="text-sm hidden sm:block" /> <pre className="min-[300px]:-ml-3 min-[390px]:ml-0">  Krish Soliya  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} className="hidden sm:block" /><pre>{" "}
             2022eeb1183@iitrpr.ac.in
           </pre>
           </section>
@@ -44,7 +44,7 @@ export default function Footer() {
         </section>
 
         <section className="text-white h-32 flex-col justify-center items-center -mt-4">
-          <section className="flex justify-center items-center h-8"><User strokeWidth={1.75} color="white" className="text-sm hidden sm:block" /> <pre>  Mihir Kasare  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} className="hidden sm:block"/><pre>{" "}
+          <section className="flex justify-center items-center h-8"><User strokeWidth={1.75} color="white" className="text-sm hidden sm:block" /> <pre className="min-[300px]:-ml-3 min-[390px]:ml-0">  Mihir Kasare  </pre> <pre className="text-white/50 text-sm">|  </pre> <Mail color="white" strokeWidth={1.75} className="hidden sm:block"/><pre>{" "}
             2022chb1052@iitrpr.ac.in
           </pre>
           </section>

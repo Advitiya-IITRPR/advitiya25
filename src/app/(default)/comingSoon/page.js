@@ -4,7 +4,10 @@ import Link from "next/link";
 export default function page() {
   return (
     <div>
-      <section className="h-screen w-screen bg-[#030d14] flex flex-col justify-center items-center">
+      <section className="h-screen w-screen flex flex-col justify-center items-center bg-no-repeat bg-cover bg-center"
+      style={{backgroundImage: "url('/signin/bg1.png')"}}
+      >
+    
         <div className=" leading-[100px] text-[#43F27F] 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[40px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px] font-normal font-[Impact] leading-[231.75px]">
           COMING SOON
         </div>
