@@ -319,6 +319,30 @@ export default function Page() {
             regURL={"https://unstop.com/competitions/robowars-advitiya25-indian-institute-of-technology-ropar-1355785"}
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <EventSlide
+            img={"/assests/events/event2.png"}
+            title={"CODCOM"}
+            desc={"a coding adventure that blends brainpower and teamwork in a contest style inspired by ICPC"}
+            tmin={2}
+            tmax={3}
+            dmin={120}
+            dmax={240}
+            regURL={"https://unstop.com/competitions/cod-com-advitiya25-indian-institute-of-technology-ropar-1357819"}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <EventSlide
+            img={"/assests/events/event2.png"}
+            title={"MATERIALIZE "}
+            desc={"Exciting Quiz on Metallurgical Documentaries"}
+            tmin={1}
+            tmax={1}
+            dmin={120}
+            dmax={150}
+            regURL={"https://unstop.com/quiz/materialize-advitiya25-indian-institute-of-technology-iit-ropar-1355780"}
+          />
+        </SwiperSlide>
       </Swiper>
 
       <div className="flex items-center justify-center gap-12 justify-self-end z-10">
