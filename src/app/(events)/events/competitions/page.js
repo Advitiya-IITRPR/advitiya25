@@ -70,18 +70,6 @@ export default function Page() {
         <SwiperSlide>
           <EventSlide
             img={"/assests/events/event2.png"}
-            title={"COD COM"}
-            desc={""}
-            tmin={2}
-            tmax={3}
-            dmin={120}
-            dmax={240}
-            regURL={"https://unstop.com/competitions/cod-com-advitiya25-indian-institute-of-technology-ropar-1357819"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <EventSlide
-            img={"/assests/events/event2.png"}
             title={"Code Hunt"}
             desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
             tmin={2}
@@ -281,18 +269,6 @@ export default function Page() {
             dmin={180}
             dmax={200}
             regURL={"https://unstop.com/competitions/coasterx-advitiya25-indian-institute-of-technology-iit-ropar-1355783"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <EventSlide
-            img={"/assests/events/event2.png"}
-            title={"Materialize"}
-            desc={"Quiz"}
-            tmin={1}
-            tmax={1}
-            dmin={120}
-            dmax={150}
-            regURL={"https://unstop.com/quiz/materialize-advitiya25-indian-institute-of-technology-iit-ropar-1355780"}
           />
         </SwiperSlide>
         <SwiperSlide>
