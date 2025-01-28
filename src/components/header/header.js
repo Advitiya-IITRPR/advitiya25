@@ -104,7 +104,7 @@ export default function Page() {
                     { path: "/events", label: "Events" },
                     { path: "/sponsors", label: "Sponsors" },
                     { path: "/campusambassador", label: "CA" },
-                    { path: "/comingSoon", label: "Our Team" },
+                    { path: "/aboutus", label: "Our Team" },
                     { path: "/contactus", label: "Contact Us" },
                   ].map((menuItem, index) => (
                     <section className="w-full flex" key={index}>
