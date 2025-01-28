@@ -5,6 +5,15 @@ const MemberList = () => {
   // Here enter the details of team members and team names are dynamically allocated based on below entries
   const teamMembers = [
     {
+      id: 24,
+      name: "Mihir Kasare",
+      role: "Overall Coordinator",
+      team: "Overall Coordination",
+      phone: "9136724826",
+      email: "2022chb1052@iitrpr.ac.in",
+      photo: "/aboutus/Team/mihir.jpeg",
+    },
+    {
       id: 1,
       name: "Jagrat Phugat",
       role: "Hospitality Head",
@@ -12,6 +21,15 @@ const MemberList = () => {
       phone: "9719210059",
       email: "2022meb1315@iitrpr.ac.in",
       photo: "/aboutus/Team/jagrat.png",
+    },
+    {
+      id: 3,
+      name: "Tarushi Taneja",
+      role: "Sponsorship Head",
+      team: "Sponsorship",
+      phone: "6307044880",
+      email: "2022csb1135@iitrpr.ac.in",
+      photo: "/aboutus/Team/tarushi.png",
     },
     {
       id: 2,
@@ -23,15 +41,6 @@ const MemberList = () => {
       photo: "/aboutus/Team/yuvraj.png",
     },
     {
-      id: 3,
-      name: "Tilak Chetan Sanghvi",
-      role: "Finance Head",
-      team: "Finance",
-      phone: "8762572063",
-      email: "2022mmb1391@iitrpr.ac.in",
-      photo: "/aboutus/Team/tilak.png",
-    },
-    {
       id: 4,
       name: "Jay Goel",
       role: "Inter School Conclave Head",
@@ -41,16 +50,16 @@ const MemberList = () => {
       photo: "/aboutus/Team/jay.jpg",
     },
     {
-      id: 5,
-      name: "Nishant",
+      id: 6,
+      name: "Venkat Kommina",
       role: "Web Dev Head",
       team: "Web Development",
-      phone: "7876783042",
-      email: "2022eeb1194@iitrpr.ac.in",
-      photo: "/aboutus/Team/nishant.jpeg",
+      phone: "7893244389",
+      email: "2022eeb1225@iitrpr.ac.in",
+      photo: "/aboutus/Team/venkat.jpg",
     },
     {
-      id: 6,
+      id: 5,
       name: "Sahil Mhapsekar",
       role: "Logistics Head",
       team: "Logistics",
@@ -96,12 +105,12 @@ const MemberList = () => {
     },
     {
       id: 11,
-      name: "Tarushi Taneja",
-      role: "Sponsorship Head",
-      team: "Sponsorship",
-      phone: "6307044880",
-      email: "2022csb1135@iitrpr.ac.in",
-      photo: "/aboutus/Team/tarushi.png",
+      name: "Tilak Chetan Sanghvi",
+      role: "Finance Head",
+      team: "Finance",
+      phone: "8762572063",
+      email: "2022mmb1391@iitrpr.ac.in",
+      photo: "/aboutus/Team/tilak.png",
     },
     {
       id: 12,
@@ -210,15 +219,6 @@ const MemberList = () => {
       phone: "9811328312",
       email: "2022chb1059@iitrpr.ac.in",
       photo: "/aboutus/Team/tushar.jpeg",
-    },
-    {
-      id: 24,
-      name: "Mihir Kasare",
-      role: "Overall Coordinator",
-      team: "Overall Coordination",
-      phone: "9136724826",
-      email: "2022chb1052@iitrpr.ac.in",
-      photo: "/aboutus/Team/mihir.jpeg",
     },
     {
       id: 25,
@@ -337,6 +337,15 @@ const MemberList = () => {
       email: "2022chb1047@iitrpr.ac.in",
       photo: "/aboutus/Team/dikshant.jpg",
     },
+    {
+      id: 38,
+      name: "Nishant",
+      role: "Web Dev Head",
+      team: "Web Development",
+      phone: "7876783042",
+      email: "2022eeb1194@iitrpr.ac.in",
+      photo: "/aboutus/Team/nishant.jpeg",
+    },
     // {
     //   id: 38,
     //   name: "Balwindar Kumar",
@@ -347,7 +356,6 @@ const MemberList = () => {
     //   photo: "/aboutus/Team/dummy.png",
     // },
   ];
-  
 
   const [visibleMembers, setVisibleMembers] = useState(6);
   const [selectedTeam, setSelectedTeam] = useState("All Teams");
