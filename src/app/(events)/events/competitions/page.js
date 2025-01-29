@@ -35,12 +35,16 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Flight Fury"}
-            desc={"A drone racing event where pilots guide their drones through a challenging arena."}
+            desc={
+              "A drone racing event where pilots guide their drones through a challenging arena."
+            }
             tmin={3}
             tmax={4}
             dmin={180}
             dmax={240}
-            regURL={"https://unstop.com/competitions/flight-fury-advitiya25-indian-institute-of-technology-iit-ropar-1355781"}
+            regURL={
+              "https://unstop.com/competitions/flight-fury-advitiya25-indian-institute-of-technology-iit-ropar-1355781"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -52,19 +56,41 @@ export default function Page() {
             tmax={4}
             dmin={180}
             dmax={240}
-            regURL={"https://unstop.com/competitions/full-throttle-advitiya25-indian-institute-of-technology-iit-ropar-1355796"}
+            regURL={
+              "https://unstop.com/competitions/full-throttle-advitiya25-indian-institute-of-technology-iit-ropar-1355796"
+            }
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <EventSlide
+            img={"/assests/events/event2.png"}
+            title={"Investors arena"}
+            desc={
+              "Fantastic opportunity to pitch your innovative ideas to a panel of esteemed investors and industry experts."
+            }
+            tmin={3}
+            tmax={4}
+            dmin={180}
+            dmax={240}
+            regURL={
+              "https://unstop.com/competitions/investors-arena-where-innovation-meets-excellence-advitiya25-indian-institute-of-technology-iit-ropar-1368832"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Cyber Forge"}
-            desc={"An online event in which a PS related to CAD and CAE is released on online platforms like unstop."}
+            desc={
+              "An online event in which a PS related to CAD and CAE is released on online platforms like unstop."
+            }
             tmin={1}
             tmax={2}
             dmin={""}
             dmax={""}
-            regURL={"https://unstop.com/competitions/cyberforge-advitiya25-iit-ropar-1355799"}
+            regURL={
+              "https://unstop.com/competitions/cyberforge-advitiya25-iit-ropar-1355799"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -76,7 +102,9 @@ export default function Page() {
             tmax={3}
             dmin={150}
             dmax={""}
-            regURL={"https://unstop.com/competitions/codehunt-advitiya25-indian-institute-of-technology-iit-ropar-1357827"}
+            regURL={
+              "https://unstop.com/competitions/codehunt-advitiya25-indian-institute-of-technology-iit-ropar-1357827"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -88,7 +116,9 @@ export default function Page() {
             tmax={1}
             dmin={90}
             dmax={210}
-            regURL={"https://unstop.com/competitions/algo-unlock-advitiya25-indian-institute-of-technology-iit-ropar-1357820"}
+            regURL={
+              "https://unstop.com/competitions/algo-unlock-advitiya25-indian-institute-of-technology-iit-ropar-1357820"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -100,7 +130,9 @@ export default function Page() {
             tmax={1}
             dmin={""}
             dmax={""}
-            regURL={"https://unstop.com/competitions/clash-royale-tournament-advitiya25-indian-institute-of-technology-iit-ropar-1357837"}
+            regURL={
+              "https://unstop.com/competitions/clash-royale-tournament-advitiya25-indian-institute-of-technology-iit-ropar-1357837"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -112,7 +144,9 @@ export default function Page() {
             tmax={4}
             dmin={180}
             dmax={240}
-            regURL={"https://unstop.com/competitions/bgmi-tournament-advitiya25-indian-institute-of-technology-iit-ropar-1357525"}
+            regURL={
+              "https://unstop.com/competitions/bgmi-tournament-advitiya25-indian-institute-of-technology-iit-ropar-1357525"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -124,7 +158,9 @@ export default function Page() {
             tmax={4}
             dmin={120}
             dmax={150}
-            regURL={"https://unstop.com/competitions/traders-arena-advitiya25-indian-institute-of-technology-iit-ropar-1355801"}
+            regURL={
+              "https://unstop.com/competitions/traders-arena-advitiya25-indian-institute-of-technology-iit-ropar-1355801"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -136,7 +172,9 @@ export default function Page() {
             tmax={2}
             dmin={180}
             dmax={240}
-            regURL={"https://unstop.com/events/cover-page-advitiya25-indian-institute-of-technology-iit-ropar-1355788"}
+            regURL={
+              "https://unstop.com/events/cover-page-advitiya25-indian-institute-of-technology-iit-ropar-1355788"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -148,7 +186,9 @@ export default function Page() {
             tmax={3}
             dmin={180}
             dmax={210}
-            regURL={"https://unstop.com/hackathons/capture-the-flag-ctf-advitiya25-indian-institute-of-technology-ropar-1355814"}
+            regURL={
+              "https://unstop.com/hackathons/capture-the-flag-ctf-advitiya25-indian-institute-of-technology-ropar-1355814"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -160,7 +200,9 @@ export default function Page() {
             tmax={4}
             dmin={180}
             dmax={210}
-            regURL={"https://unstop.com/hackathons/gamejam-advitiya25-indian-institute-of-technology-iit-ropar-1355786"}
+            regURL={
+              "https://unstop.com/hackathons/gamejam-advitiya25-indian-institute-of-technology-iit-ropar-1355786"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -172,7 +214,9 @@ export default function Page() {
             tmax={6}
             dmin={120}
             dmax={180}
-            regURL={"https://unstop.com/competitions/beyond-zenith-class-e-rocket-launching-competition-advitiya25-indian-institute-of-technology-iit-ropar-1360248"}
+            regURL={
+              "https://unstop.com/competitions/beyond-zenith-class-e-rocket-launching-competition-advitiya25-indian-institute-of-technology-iit-ropar-1360248"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -184,7 +228,9 @@ export default function Page() {
             tmax={3}
             dmin={240}
             dmax={300}
-            regURL={"https://unstop.com/competitions/catalyzing-concepts-advitiya25-indian-institute-of-technology-iit-ropar-1355784"}
+            regURL={
+              "https://unstop.com/competitions/catalyzing-concepts-advitiya25-indian-institute-of-technology-iit-ropar-1355784"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -196,7 +242,9 @@ export default function Page() {
             tmax={5}
             dmin={180}
             dmax={210}
-            regURL={"https://unstop.com/competitions/blueprint-battle-advitiya25-indian-institute-of-technology-iit-ropar-1355776"}
+            regURL={
+              "https://unstop.com/competitions/blueprint-battle-advitiya25-indian-institute-of-technology-iit-ropar-1355776"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -208,7 +256,9 @@ export default function Page() {
             tmax={3}
             dmin={180}
             dmax={210}
-            regURL={"https://unstop.com/competitions/the-bridge-off-advitiya25-indian-institute-of-technology-ropar-1357538"}
+            regURL={
+              "https://unstop.com/competitions/the-bridge-off-advitiya25-indian-institute-of-technology-ropar-1357538"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -220,7 +270,9 @@ export default function Page() {
             tmax={2}
             dmin={200}
             dmax={250}
-            regURL={"https://unstop.com/events/circuit-chase-advitiya25-indian-institute-of-technology-iit-ropar-1355789"}
+            regURL={
+              "https://unstop.com/events/circuit-chase-advitiya25-indian-institute-of-technology-iit-ropar-1355789"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -232,7 +284,9 @@ export default function Page() {
             tmax={3}
             dmin={240}
             dmax={300}
-            regURL={"https://unstop.com/competitions/laser-shot-20-advitiya25-indian-institute-of-technology-iit-ropar-1355782"}
+            regURL={
+              "https://unstop.com/competitions/laser-shot-20-advitiya25-indian-institute-of-technology-iit-ropar-1355782"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -244,7 +298,9 @@ export default function Page() {
             tmax={3}
             dmin={200}
             dmax={300}
-            regURL={"https://unstop.com/competitions/maths-arena-advitiya25-indian-institute-of-technology-iit-ropar-1355787"}
+            regURL={
+              "https://unstop.com/competitions/maths-arena-advitiya25-indian-institute-of-technology-iit-ropar-1355787"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -256,7 +312,9 @@ export default function Page() {
             tmax={4}
             dmin={180}
             dmax={200}
-            regURL={"https://unstop.com/competitions/ai-fusion-advitiya25-indian-institute-of-technology-iit-ropar-1355755"}
+            regURL={
+              "https://unstop.com/competitions/ai-fusion-advitiya25-indian-institute-of-technology-iit-ropar-1355755"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -268,10 +326,12 @@ export default function Page() {
             tmax={4}
             dmin={180}
             dmax={200}
-            regURL={"https://unstop.com/competitions/coasterx-advitiya25-indian-institute-of-technology-iit-ropar-1355783"}
+            regURL={
+              "https://unstop.com/competitions/coasterx-advitiya25-indian-institute-of-technology-iit-ropar-1355783"
+            }
           />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Case Study"}
@@ -280,9 +340,11 @@ export default function Page() {
             tmax={3}
             dmin={180}
             dmax={360}
-            regURL={"https://unstop.com/events/circuit-chase-advitiya25-indian-institute-of-technology-iit-ropar-1355789"}
+            regURL={
+              "https://unstop.com/events/circuit-chase-advitiya25-indian-institute-of-technology-iit-ropar-1355789"
+            }
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <EventSlide
             img={"/assests/events/event2.png"}
@@ -292,19 +354,25 @@ export default function Page() {
             tmax={5}
             dmin={180}
             dmax={360}
-            regURL={"https://unstop.com/competitions/robowars-advitiya25-indian-institute-of-technology-ropar-1355785"}
+            regURL={
+              "https://unstop.com/competitions/robowars-advitiya25-indian-institute-of-technology-ropar-1355785"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"CODCOM"}
-            desc={"a coding adventure that blends brainpower and teamwork in a contest style inspired by ICPC"}
+            desc={
+              "a coding adventure that blends brainpower and teamwork in a contest style inspired by ICPC"
+            }
             tmin={2}
             tmax={3}
             dmin={120}
             dmax={240}
-            regURL={"https://unstop.com/competitions/cod-com-advitiya25-indian-institute-of-technology-ropar-1357819"}
+            regURL={
+              "https://unstop.com/competitions/cod-com-advitiya25-indian-institute-of-technology-ropar-1357819"
+            }
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -316,7 +384,9 @@ export default function Page() {
             tmax={1}
             dmin={120}
             dmax={150}
-            regURL={"https://unstop.com/quiz/materialize-advitiya25-indian-institute-of-technology-iit-ropar-1355780"}
+            regURL={
+              "https://unstop.com/quiz/materialize-advitiya25-indian-institute-of-technology-iit-ropar-1355780"
+            }
           />
         </SwiperSlide>
       </Swiper>
