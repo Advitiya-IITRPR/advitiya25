@@ -97,7 +97,9 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Code Hunt"}
-            desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            desc={
+              "Get ready for an awesome adventure with our coding club! The challenge? Our treasure's been swiped by the tricky Deadbug, and we need your help to get it back in the CODEHUNT."
+            }
             tmin={2}
             tmax={3}
             dmin={150}
@@ -111,7 +113,9 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Algo Unlock"}
-            desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            desc={
+              "Dive into the coding challenge at 'AlgoUnlock: Code for a Cure' in advitiya! Your mission: crack the alien-coded passcode. Be the hero in this digital quest, mastering the language of input and output. Join us for a thrilling race against the clock, where a simple code changes the course of destiny. Ready to unlock the cure? Let's code together!"
+            }
             tmin={1}
             tmax={1}
             dmin={90}
@@ -125,7 +129,9 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Clash Royale"}
-            desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            desc={
+              "The tournament will consist of three stages: group stage, qualifiers, and finals. In the group stage, matches will be knockouts (one match win or defeat). The qualifiers will be conducted in best of three (bo3) format, and the finals will be conducted in best of five (bo5) format."
+            }
             tmin={1}
             tmax={1}
             dmin={""}
@@ -139,7 +145,9 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"BGMI Tournament"}
-            desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            desc={
+              "A team should consist of exactly four members. Students from different educational institutions can form a team. More than one team can participate from the same institution."
+            }
             tmin={4}
             tmax={4}
             dmin={180}
@@ -167,7 +175,9 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Cover Page"}
-            desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            desc={
+              "Participants must design a captivating event poster by combining two randomly chosen elements – one from the Genre Wheel and the other from the Age Group Wheel."
+            }
             tmin={1}
             tmax={2}
             dmin={180}
@@ -223,7 +233,9 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Catalyzing Concepts"}
-            desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            desc={
+              "Unveiling the Infinite Potential at the Molecular Scale. This event is designed to inspire innovation and creative thinking among participants. The specific topic of the event will be unveiled at the time of the event, adding an element of anticipation and excitement. Embrace the challenge, adaptability, and creative thinking that this thrilling and intellectually stimulating experience is set to offer."
+            }
             tmin={1}
             tmax={3}
             dmin={240}
@@ -265,7 +277,9 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Circuit Chase"}
-            desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            desc={
+              "The event will consist of three rounds. Round 1 and Round 2 will be a 'Treasure Hunt' where teams solve questions based on 12th-grade and JEE syllabus concepts. Round 3 will test practical knowledge as participants build circuits according to given specifications."
+            }
             tmin={1}
             tmax={2}
             dmin={200}
@@ -279,7 +293,7 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Laser Shot"}
-            desc={"make path for the Laser."}
+            desc={"Make path for the Laser."}
             tmin={2}
             tmax={3}
             dmin={240}
@@ -293,7 +307,9 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"Maths Arena"}
-            desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            desc={
+              "Compete in a thrilling 3-round challenge: Round 1: Solve puzzles amidst loud music, testing teamwork under pressure. Round 2: Navigate rooms of increasing difficulty, solving problems to earn points and flags. Round 3: Place strategic bets on answers, risking points to secure victory."
+            }
             tmin={2}
             tmax={3}
             dmin={200}
@@ -307,7 +323,9 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"AI Fusion"}
-            desc={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            desc={
+              "To test the participant’s knowledge about existing AI tools, their usage, and efficiency."
+            }
             tmin={3}
             tmax={4}
             dmin={180}
@@ -349,7 +367,9 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"RoboWar"}
-            desc={"Robot Battle"}
+            desc={
+              "Ultimate test of engineering excellence, teamwork, strategy, and creativity— ROBO-WARS"
+            }
             tmin={3}
             tmax={5}
             dmin={180}
@@ -363,9 +383,7 @@ export default function Page() {
           <EventSlide
             img={"/assests/events/event2.png"}
             title={"CODCOM"}
-            desc={
-              "a coding adventure that blends brainpower and teamwork in a contest style inspired by ICPC"
-            }
+            desc={"Contest style inspired by ICPC"}
             tmin={2}
             tmax={3}
             dmin={120}
