@@ -11,14 +11,42 @@ import EventSlide from "@/components/EventSlide/EventSlide";
 
 export default function Page() {
   const [s, setS] = useState(null);
+  const [selectedTeam, setSelectedTeam] = useState("All Competitions");
+  const teams = [
+    "All Competitions",
+    "Aeris",
+    "Voltaris",
+    "Terrranova",
+    "Infernix",
+  ];
+
+  // console.log(selectedTeam);
+  // console.log(teams);
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center font-kodchasan relative p-8 md:p-20 bg-[var(--background)]">
+    <section className="min-h-screen flex flex-col items-center justify-center font-kodchasan relative p-8 md:p-6 bg-[var(--background)]">
       <Image
         fill={true}
         src={"/assests/events/bg2.png"}
         className="absolute top-0 left-0 z-0"
         alt="BG"
       />
+
+      <div className="block px-4 mb-4 relative">
+        <select
+          value={selectedTeam}
+          onChange={(e) => setSelectedTeam(e.target.value)}
+          className="w-full p-4 bg-[#141c23] text-white border border-[#40ec7b] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#40ec7b] font-[Kodchasan]"
+        >
+          {teams.map((team) => (
+            <option key={team} value={team}>
+              {team}
+            </option>
+          ))}
+        </select>
+        {/* <div className="absolute right-10 top-1/2 transform -translate-y-1/2 pointer-events-none">
+          ▼
+        </div> */}
+      </div>
 
       <Swiper
         spaceBetween={50}
@@ -27,7 +55,7 @@ export default function Page() {
           640: { slidesPerView: 2 },
           320: { slidesPerView: 1 },
         }}
-        onSlideChange={() => console.log("slide change")}
+        // onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => setS(swiper)}
         className="w-full flex-1"
       >

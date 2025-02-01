@@ -77,6 +77,15 @@ const MemberList = () => {
       photo: "/aboutus/Team/sahil.jpeg",
     },
     {
+      id: 12,
+      name: "Keshav Bansal",
+      role: "Event Management Head",
+      team: "Event Management",
+      phone: "8527782036",
+      email: "2022mcb1268@iitrpr.ac.in",
+      photo: "/aboutus/Team/keshav.png",
+    },
+    {
       id: 7,
       name: "Kamran Mehdi",
       role: "Finance Head",
@@ -120,15 +129,6 @@ const MemberList = () => {
       phone: "8762572063",
       email: "2022mmb1391@iitrpr.ac.in",
       photo: "/aboutus/Team/tilak.png",
-    },
-    {
-      id: 12,
-      name: "Keshav Bansal",
-      role: "Event Management Head",
-      team: "Event Management",
-      phone: "8527782036",
-      email: "2022mcb1268@iitrpr.ac.in",
-      photo: "/aboutus/Team/keshav.png",
     },
     {
       id: 13,
@@ -357,7 +357,7 @@ const MemberList = () => {
     // },
   ];
 
-  const [visibleMembers, setVisibleMembers] = useState(6);
+  const [visibleMembers, setVisibleMembers] = useState(9);
   const [selectedTeam, setSelectedTeam] = useState("All Teams");
   const [isMobile, setIsMobile] = useState(false);
 
@@ -411,10 +411,10 @@ const MemberList = () => {
         ))}
       </div>
 
-      {filteredMembers.length > 6 && (
+      {filteredMembers.length > 9 && (
         <div className="button-container">
           <button className="view-more" onClick={toggleView}>
-            {visibleMembers === 6 ? "View More" : "View Less"}
+            {visibleMembers === 9 ? "View More" : "View Less"}
           </button>
         </div>
       )}
