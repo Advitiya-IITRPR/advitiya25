@@ -66,7 +66,7 @@ h1 {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: url('/assests/events/moonBG.png') no-repeat center bottom/contain;
+  background: url('/assests/events/moonbg.png') no-repeat center bottom/contain;
   /* background-position: center bottom; */
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
 }
