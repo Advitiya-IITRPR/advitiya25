@@ -241,7 +241,7 @@ const MemberList = () => {
     {
       id: 26,
       name: "Sanat Gupta",
-      role: "Head, Sponsorship Team",
+      role: "Sponsorship Team Head",
       team: "Sponsorship",
       phone: "9855108222",
       email: "2022csb1119@iitrpr.ac.in",
@@ -268,7 +268,7 @@ const MemberList = () => {
     {
       id: 29,
       name: "Anas Malik",
-      role: "Head - Logistics Team",
+      role: "Logistics Team Head",
       team: "Logistics",
       phone: "8287394131",
       email: "2022eeb1296@iitrpr.ac.in",
@@ -379,7 +379,7 @@ const MemberList = () => {
   ].sort();
 
   const toggleView = () => {
-    setVisibleMembers(visibleMembers === 6 ? teamMembers.length : 6);
+    setVisibleMembers(visibleMembers === 9 ? teamMembers.length : 9);
   };
 
   const filteredMembers = teamMembers.filter((member) =>
@@ -391,7 +391,7 @@ const MemberList = () => {
   return (
     <div>
       {/* Mobile-Only*/}
-      <div className="block md:hidden px-4 mb-6">
+      <div className="block px-4 mb-6 md:hidden">
         <select
           value={selectedTeam}
           onChange={(e) => setSelectedTeam(e.target.value)}
