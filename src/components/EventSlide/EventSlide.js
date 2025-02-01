@@ -31,7 +31,7 @@ export default function EventSlide({
   return (
     <div className="flip-card m-4 p-[2px] mx-auto">
       <div
-        className={`flip-card-inner rounded-3xl bg-gradient-to-b from-${color}-500 via-transparent p-[2px] to-transparent h-full w-full`}
+        className={`flip-card-inner ${team} rounded-3xl bg-gradient-to-b from-${color}-500 via-transparent p-[2px] to-transparent h-full w-full`}
       >
         <div className="flip-card-front rounded-3xl p-4 h-full">
           <div className="mx-auto aspect-square relative image">
