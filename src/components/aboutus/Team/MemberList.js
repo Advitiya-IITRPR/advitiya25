@@ -38,7 +38,7 @@ const MemberList = () => {
       team: "Media & Coverage",
       phone: "9015406165",
       email: "2022eeb1156@iitrpr.ac.in",
-      photo: "/aboutus/Team/anshul.jpg",
+      photo: "/aboutus/Team/anshul2.jpg",
     },
     {
       id: 3,
