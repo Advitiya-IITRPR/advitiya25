@@ -31,6 +31,15 @@ const MemberList = () => {
       email: "2022meb1315@iitrpr.ac.in",
       photo: "/aboutus/Team/jagrat.png",
     },
+     {
+      id: 18,
+      name: "Anshul",
+      role: "Media & Coverage Head",
+      team: "Media & Coverage",
+      phone: "9015406165",
+      email: "2022eeb1156@iitrpr.ac.in",
+      photo: "/aboutus/Team/anshul.jpg",
+    },
     {
       id: 3,
       name: "Tarushi Taneja",
@@ -39,6 +48,15 @@ const MemberList = () => {
       phone: "6307044880",
       email: "2022csb1135@iitrpr.ac.in",
       photo: "/aboutus/Team/tarushi.png",
+    },
+     {
+      id: 38,
+      name: "Nishant",
+      role: "Web Dev Head",
+      team: "Web Development",
+      phone: "7876783042",
+      email: "2022eeb1194@iitrpr.ac.in",
+      photo: "/aboutus/Team/nishant.jpeg",
     },
     {
       id: 2,
@@ -175,15 +193,7 @@ const MemberList = () => {
       email: "2022eeb1214@iitrpr.ac.in",
       photo: "/aboutus/Team/shaubhik.jpg",
     },
-    {
-      id: 18,
-      name: "Anshul",
-      role: "Media & Coverage Head",
-      team: "Media & Coverage",
-      phone: "9015406165",
-      email: "2022eeb1156@iitrpr.ac.in",
-      photo: "/aboutus/Team/anshul.jpg",
-    },
+   
     {
       id: 19,
       name: "Kavyansh Dhakad",
@@ -337,15 +347,7 @@ const MemberList = () => {
       email: "2022chb1047@iitrpr.ac.in",
       photo: "/aboutus/Team/dikshant.jpg",
     },
-    {
-      id: 38,
-      name: "Nishant",
-      role: "Web Dev Head",
-      team: "Web Development",
-      phone: "7876783042",
-      email: "2022eeb1194@iitrpr.ac.in",
-      photo: "/aboutus/Team/nishant.jpeg",
-    },
+   
     // {
     //   id: 38,
     //   name: "Balwindar Kumar",
