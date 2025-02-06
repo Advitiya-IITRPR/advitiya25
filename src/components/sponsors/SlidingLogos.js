@@ -55,7 +55,7 @@ const SlidingLogos = ({ logoCount = 16, direction = 'normal' }) => {
     {
       src: '/sponsors/companylogos/logo_001.jpeg',
       alt: 'logo9',
-      
+      link: "https://www.advitiya25.in/sponsors/"
     },
     {
       src: '/sponsors/companylogos/logo_10.jpg',
