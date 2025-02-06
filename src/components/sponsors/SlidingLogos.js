@@ -53,6 +53,11 @@ const SlidingLogos = ({ logoCount = 16, direction = 'normal' }) => {
       link: "https://jpdhub.com/"
     },
     {
+      src: '/sponsors/companylogos/logo_001.jpeg',
+      alt: 'logo9',
+      
+    },
+    {
       src: '/sponsors/companylogos/logo_10.jpg',
       alt: 'logo10',
       link: "https://wayspire.in/"
