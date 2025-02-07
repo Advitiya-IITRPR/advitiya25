@@ -63,6 +63,7 @@ const SlidingLogos = ({ logoCount = 18, direction = "normal" }) => {
       link: "https://digitalterminal.in/",
     },
     {
+<<<<<<< HEAD
       src: "/sponsors/companylogos2/11.png",
       alt: "theeducationtree_logo",
       link: "https://www.theeducationtree.com/",
@@ -100,6 +101,18 @@ const SlidingLogos = ({ logoCount = 18, direction = "normal" }) => {
   ];
 
   // console.log(sponsors.length);
+=======
+      src: '/sponsors/companylogos/logo_001.jpeg',
+      alt: 'logo9',
+      link: "https://www.advitiya25.in/sponsors/"
+    },
+    {
+      src: '/sponsors/companylogos/logo_10.jpg',
+      alt: 'logo10',
+      link: "https://wayspire.in/"
+    }
+  ]
+>>>>>>> a239bf442084eb619fa7b001ea251947122fa47b
 
   // Duplicate logos for seamless loop
   const duplicatedSponsors = [...sponsors, ...sponsors]; // Always display all logos

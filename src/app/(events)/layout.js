@@ -11,8 +11,8 @@ const kodchasan = Kodchasan({
 });
 
 export const metadata = {
-  title: "Events | Advitiya '25"
-}
+  title: "Events | Advitiya'25",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -27,7 +27,9 @@ export default function RootLayout({ children }) {
             >
               HOME • EVENTS
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-kodchasan z-10">Events & ISC</h1>
+            <h1 className="text-4xl md:text-6xl lg:text-8xl text-white font-kodchasan z-10">
+              Events & ISC
+            </h1>
             <Image
               src={"/assests/events/bg.png"}
               fill={true}
