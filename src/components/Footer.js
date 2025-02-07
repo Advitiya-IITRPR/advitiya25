@@ -77,12 +77,15 @@ export default function Footer() {
     </button>
   </a>
           </section>
+          <section className="text-white text-lg font-kodchasan mt-2 font-bold">Designed by Swiftrut Technologies</section>
         </div>
       </div>
 
       <img src="/signin/bg4br.png" alt="background image" className="pointer-events-none absolute bottom-0 right-0 md:h-auto h-1/3" />
       <img src="/signin/bg4bl.png" alt="background image" className="pointer-events-none absolute bottom-0 left-0 hidden md:block" />
       <img src="/signin/bg4line.png" alt="background image" className="pointer-events-none absolute bottom-3/4 right-0 w-1/2" />
+
+      {/* <div className="absolute bottom-0 right-0 text-2xl text-white">Designed by <span className="">Swiftrut Technologies</span></div> */}
     </div>
   );
 }

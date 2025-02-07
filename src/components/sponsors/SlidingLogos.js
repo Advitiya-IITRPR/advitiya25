@@ -13,6 +13,11 @@ const SlidingLogos = ({ logoCount = 18, direction = "normal" }) => {
       link: "https://www.aerosocietyindia.co.in/",
     },
     {
+      src: "/sponsors/companylogos2/Sponsorship.png",
+      alt: "sponsorship_logo",
+      link: "https://www.advitiya.in/sponsors",
+    },
+    {
       src: "/sponsors/companylogos2/8.png",
       alt: "finlatics_logo",
       link: "https://www.finlatics.com/",
