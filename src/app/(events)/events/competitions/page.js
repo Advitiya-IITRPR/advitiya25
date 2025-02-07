@@ -229,8 +229,7 @@ export default function Page() {
         className="absolute top-0 left-0 z-0"
         alt="BG"
       />
-      {/* This is to compile all classes skipped by postcss */}
-      <div className="hidden bg-green-500 via-green-200 via-green-500 text-green-500 from-green-500 bg-blue-500 via-blue-200 via-blue-500 text-blue-500 from-blue-500 bg-yellow-500 via-yellow-200 via-yellow-500 text-yellow-500 from-yellow-500 bg-red-500 via-red-200 via-red-500 text-red-500 from-red-500"></div>
+
       {/* Dropdown */}
       <div className="block px-4 mb-4 relative">
         <select

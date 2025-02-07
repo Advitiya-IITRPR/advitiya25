@@ -31,15 +31,6 @@ const MemberList = () => {
       email: "2022meb1315@iitrpr.ac.in",
       photo: "/aboutus/Team/jagrat.png",
     },
-     {
-      id: 18,
-      name: "Anshul",
-      role: "Media & Coverage Head",
-      team: "Media & Coverage",
-      phone: "9015406165",
-      email: "2022eeb1156@iitrpr.ac.in",
-      photo: "/aboutus/Team/anshul2.jpeg",
-    },
     {
       id: 3,
       name: "Tarushi Taneja",
@@ -48,15 +39,6 @@ const MemberList = () => {
       phone: "6307044880",
       email: "2022csb1135@iitrpr.ac.in",
       photo: "/aboutus/Team/tarushi.png",
-    },
-     {
-      id: 38,
-      name: "Nishant",
-      role: "Web Dev Head",
-      team: "Web Development",
-      phone: "7876783042",
-      email: "2022eeb1194@iitrpr.ac.in",
-      photo: "/aboutus/Team/nishant.jpeg",
     },
     {
       id: 4,
@@ -85,7 +67,15 @@ const MemberList = () => {
       email: "2022eeb1194@iitrpr.ac.in",
       photo: "/aboutus/Team/nishant.jpeg",
     },
-   
+    {
+      id: 18,
+      name: "Anshul",
+      role: "Media & Coverage Head",
+      team: "Media & Coverage",
+      phone: "9015406165",
+      email: "2022eeb1156@iitrpr.ac.in",
+      photo: "/aboutus/Team/anshul.jpg",
+    },
     {
       id: 10,
       name: "Swapnil Pandey",
@@ -356,10 +346,6 @@ const MemberList = () => {
       email: "2022chb1047@iitrpr.ac.in",
       photo: "/aboutus/Team/dikshant.jpg",
     },
-<<<<<<< HEAD
-=======
-   
->>>>>>> a239bf442084eb619fa7b001ea251947122fa47b
     // {
     //   id: 38,
     //   name: "Balwindar Kumar",
