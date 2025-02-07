@@ -52,8 +52,8 @@
   .logoImage {
     max-height: 200px;
   }
-  .logoItem{
-    width: calc(100%/10);
+  .logoItem {
+    width: calc(100% / 10);
   }
 }
 
@@ -65,4 +65,3 @@
     max-height: 300px;
   }
 }
-

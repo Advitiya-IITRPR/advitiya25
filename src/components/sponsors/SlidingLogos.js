@@ -1,71 +1,115 @@
-'use client'
+"use client";
 
-import React, { useState } from 'react'
-import Image from 'next/image'
-import styles from './SlidingLogos.module.css'
-import Link from 'next/link'
-const SlidingLogos = ({ logoCount = 16, direction = 'normal' }) => {
-  const [isHovered, setIsHovered] = useState(false)
+import React, { useState } from "react";
+import Image from "next/image";
+import styles from "./SlidingLogos.module.css";
+import Link from "next/link";
+const SlidingLogos = ({ logoCount = 18, direction = "normal" }) => {
+  const [isHovered, setIsHovered] = useState(false);
   const sponsors = [
     {
-      src: '/sponsors/companylogos/logo_1.png',
-      alt: 'logo1',
-      link: "https://www.aerosocietyindia.co.in/"
+      src: "/sponsors/companylogos2/13.png",
+      alt: "aerosocietyindia_logo",
+      link: "https://www.aerosocietyindia.co.in/",
     },
     {
-      src: '/sponsors/companylogos/finlatics.png',
-      alt: 'logo2',
-      link: "https://www.finlatics.com/"
+      src: "/sponsors/companylogos2/8.png",
+      alt: "finlatics_logo",
+      link: "https://www.finlatics.com/",
     },
     {
-      src: '/sponsors/companylogos/logo_3.png',
-      alt: 'logo3',
-      link: "https://www.samaro.ai/"
+      src: "/sponsors/companylogos2/6.png",
+      alt: "samaro_logo",
+      link: "https://www.samaro.ai/",
     },
     {
-      src: '/sponsors/companylogos/logo_4.png',
-      alt: 'logo4',
-      link: "https://swiftrut.com/"
+      src: "/sponsors/companylogos2/1.png",
+      alt: "swiftrut_logo",
+      link: "https://swiftrut.com/",
     },
     {
-      src: '/sponsors/companylogos/logo_5.png',
-      alt: 'logo5',
-      link: "https://www.truscholar.io/"
+      src: "/sponsors/companylogos2/2.png",
+      alt: "truscholar_logo",
+      link: "https://www.truscholar.io/",
     },
     {
-      src: '/sponsors/companylogos/logo_6.png',
-      alt: 'logo6',
-      link: "https://www.icicibank.com/"
+      src: "/sponsors/companylogos2/5.png",
+      alt: "icicibank_logo",
+      link: "https://www.icicibank.com/",
     },
     {
-      src: '/sponsors/companylogos/logo_7.jpg',
-      alt: 'logo7',
-      link: "https://edufabrica.net/"
+      src: "/sponsors/companylogos2/7.png",
+      alt: "edufabrica_logo",
+      link: "https://edufabrica.net/",
+    },
+    // {
+    //   src: "/sponsors/companylogos2/3.png",
+    //   alt: "ixigo_logo",
+    //   link: "https://www.ixigo.com/",
+    // },
+    {
+      src: "/sponsors/companylogos2/4.png",
+      alt: "jpdhub_logo",
+      link: "https://jpdhub.com/",
     },
     {
-      src: '/sponsors/companylogos/ixigo.png',
-      alt: 'logo8',
-      link: "https://www.ixigo.com/"
+      src: "/sponsors/companylogos2/9.png",
+      alt: "thomascrick_logo",
+      link: "https://www.thomascrick.in/",
     },
     {
-      src: '/sponsors/companylogos/logo_9.jpg',
-      alt: 'logo9',
-      link: "https://jpdhub.com/"
+      src: "/sponsors/companylogos2/10.png",
+      alt: "dt_logo",
+      link: "https://digitalterminal.in/",
     },
     {
-      src: '/sponsors/companylogos/logo_10.jpg',
-      alt: 'logo10',
-      link: "https://wayspire.in/"
-    }
-  ]
+      src: "/sponsors/companylogos2/11.png",
+      alt: "theeducationtree_logo",
+      link: "https://www.theeducationtree.com/",
+    },
+    {
+      src: "/sponsors/companylogos2/12.png",
+      alt: "2IIM_logo",
+      link: "https://2iim.com/",
+    },
+    {
+      src: "/sponsors/companylogos2/14.png",
+      alt: "GFG_logo",
+      link: "https://geeksforgeeks.org/",
+    },
+    {
+      src: "/sponsors/companylogos2/16.png",
+      alt: "codingblocks_logo",
+      link: "https://codingblocks.com/",
+    },
+    {
+      src: "/sponsors/companylogos2/17.png",
+      alt: "medinos_logo",
+      link: "https://medinos.in/",
+    },
+    {
+      src: "/sponsors/companylogos2/18.png",
+      alt: "aieevents_logo",
+      link: "https://www.instagram.com/aiecreations/",
+    },
+    {
+      src: "/sponsors/companylogos/logo_10.jpg",
+      alt: "wayspire_logo",
+      link: "https://wayspire.in/",
+    },
+  ];
+
+  // console.log(sponsors.length);
 
   // Duplicate logos for seamless loop
-  const duplicatedSponsors = [...sponsors, ...sponsors]
+  const duplicatedSponsors = [...sponsors, ...sponsors]; // Always display all logos
+
+  // console.log(duplicatedSponsors);
 
   return (
     <div className={styles.marqueeContainer}>
       <div
-        className={`${styles.marquee} ${isHovered ? styles.paused : ''}`}
+        className={`${styles.marquee} ${isHovered ? styles.paused : ""}`}
         style={{
           animationDirection: direction,
         }}
@@ -74,23 +118,22 @@ const SlidingLogos = ({ logoCount = 16, direction = 'normal' }) => {
       >
         <div className={styles.logoWrapper}>
           {duplicatedSponsors.map((sponsor, index) => (
-            <div key={index} className={`${styles.logoItem} ${sponsor.alt == 'logo2' ? 'bg-white p-6' : ''} rounded-xl`}>
+            <div key={index} className={`${styles.logoItem} rounded-xl`}>
               <Link href={sponsor.link}>
-              <Image
-                src={sponsor.src}
-                alt={sponsor.alt}
-                width={300}
-                height={200}
-                className={`${styles.logoImage} rounded-xl`}
-              />
+                <Image
+                  src={sponsor.src}
+                  alt={sponsor.alt}
+                  width={300}
+                  height={200}
+                  className={`${styles.logoImage} rounded-xl`}
+                />
               </Link>
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SlidingLogos
-
+export default SlidingLogos;
