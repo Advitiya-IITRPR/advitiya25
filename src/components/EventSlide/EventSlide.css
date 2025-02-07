@@ -67,7 +67,6 @@
   height: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  @apply bg-green-500;
 }
 
 .flip-card-inner::before {
@@ -81,5 +80,25 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   z-index: 1;
-  @apply bg-green-500;
+}
+
+
+.flip-card-inner.Aeris::after,
+.flip-card-inner.Aeris::before {
+  @apply bg-green-500
+}
+
+.flip-card-inner.Voltaris::after,
+.flip-card-inner.Voltaris::before {
+  @apply bg-blue-500
+}
+
+.flip-card-inner.Infernix::after,
+.flip-card-inner.Infernix::before {
+  @apply bg-yellow-500
+}
+
+.flip-card-inner.Terranova::after,
+.flip-card-inner.Terranova::before {
+  @apply bg-red-500
 }
